@@ -142,15 +142,15 @@
 
 
 /* >= Tablet */
-@media (min-width: 740px) {
+@media (min-width: 740px) and (max-width: 1023px) {
     .row {
-        margin-left: -8px;
-        margin-right: -8px;
+        margin-left: -5px;
+        margin-right: -5px;
     }
 
     .col {
-        padding-left: 8px;
-        padding-right: 8px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .t-0 {
@@ -279,7 +279,7 @@
 
 
 
-/* Tablet - PC low resolution */
+/* Tablet - PC low resolution chỉ set màn hình*/
 @media (min-width: 740px) and (max-width: 1023px) {
     .wide {
         width: 644px;
@@ -293,21 +293,21 @@
     }
 
     .wide .row {
-        margin-left: -12px;
-        margin-right: -12px;
+        margin-left: -5px;
+        margin-right: -5px;
     }
 
-    .wide .row.sm-gutter {
+    .wide .row.p-gutter {
         margin-left: -10px;
         margin-right: -10px;
     }
 
     .wide .col {
-        padding-left: 12px;
-        padding-right: 12px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
-    .wide .row.sm-gutter .col {
+    .wide .row.p-gutter .col {
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -449,7 +449,7 @@
         margin-right: -10px;
     }
 
-    .row.sm-gutter {
+    .row.p-gutter {
         margin-left: -10px;
         margin-right: -10px;
     }
@@ -459,7 +459,7 @@
         padding-right: 10px;
     }
 
-    .row.sm-gutter .col {
+    .row.p-gutter .col {
         padding-left: 10px;
         padding-right: 10px;
     }
