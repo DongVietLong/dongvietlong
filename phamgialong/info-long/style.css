@@ -1,0 +1,23 @@
+.nav {
+    background-color: lightblue;
+    padding: 5px;
+    align-items: center;
+    gap: 13px;
+}
+
+.img {
+    margin-left: 25px;
+    height: 45px;
+    width: 45px;
+}
+
+.search {
+    border: none;
+    padding: 5px;
+}
+
+.parend-search {
+    overflow: hidden;
+    background-color: white;
+    border-radius: 25px;
+}
