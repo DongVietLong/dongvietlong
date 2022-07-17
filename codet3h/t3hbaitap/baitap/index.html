@@ -17,7 +17,7 @@
 
 <body>
   <header class="header row bg-light">
-    <div class="header_box col-8">
+    <div class="header_box">
       <div class="img_cover">
         <img src="./Untitled.png" class="edit-img" alt="lỗi hiển thị">
         <div class="editPhoto bg-white">
@@ -52,14 +52,9 @@
             cá nhân</button>
         </div>
       </div>
-      <nav class="navbar navbar-expand-lg navbar-light header_navbar">
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <div id="app">
-              <ul>
-                navbar
-              </ul>
+      <nav class="navbar navbar-expand-lg navbar-light header_navbar">   
+          <div id="app">          
           </div>
-        </div>
         <div class="more">
           <p class="dots"><i class="fa-solid fa-ellipsis"></i></p>
         </div>
@@ -68,8 +63,8 @@
   </header>
 
   <div class="row justify-content-md-center">
-    <div class="box-container col-8">
-      <div class="container_introduce col-5 bg-light ">
+    <div class="box-container ">
+      <div class="container_introduce bg-light ">
         <h4 class="title">Giới Thiệu</h4>
         <button class="edit_introduce">Chỉnh sửa tiểu sử</button>
         <div class="profile"><i class="fa-solid fa-graduation-cap"></i>Đã học tại <span class="text_school">THPT CẦU
@@ -85,7 +80,17 @@
         </div>
         <button class="edit_introduce">Chỉnh sửa chi tiết</button>
         <button class="edit_introduce">Thêm sở thích</button>
+        <div class="img">
+
+        </div>
         <button class="edit_introduce">Chỉnh sửa phần Đáng chú ý</button>
+        
+        <div class="grid_image">
+          <div class="header_grid">
+            <h4 class="text_header">Ảnh</h4>
+            <button class="seeAllPhotos">Xem tất cả ảnh</button>
+          </div>
+        </div>
       </div>
       <div class="container_news col ">
         <div class="container_news_heading bg-light">
@@ -147,10 +152,10 @@
             </div>
           </div>
           <div class="div_cap">
-            <p class="cap">Gõ cửa trái tim <i class="fa-solid fa-heart"></i> xin em được vào</p>
+            <p class="cap">Gõ cửa trái tim <i class="fa-solid fa-heart"></i></p>
           </div>
           <div class="img_posts">
-            <img src="./dongvietlong.jpg" alt="" class="img_posts_first">
+            <img src="./long3.jpg" alt="" class="img_posts_first">
           </div>
           <div class="footer_posts">
             <div class="icon_posts">
@@ -186,8 +191,23 @@
             </div>
             <div class="comment_friends">
               <div class="box_comment">
-                <p class="user_name">Trung Phong</p>
+                <!-- <div class="getComment"></div> -->
+              </div>
+              <div class="feedback_comment">
+                <p class="like_comment">Thích</p>
+                <p class="feedback">Phản hồi</p>
+              </div>
+            </div>
+          </div>
+          <div class="commentOfFriends">
+            <div class="img_commentOfFriends">
+              <img src="./273430886_3152898434987919_4204426877592786831_n.jpg" alt="" class="avt_listfriend">
+            </div>
+            <div class="comment_friends">
+              <div class="box_comment">
+                <!-- <p class="user_name">Trung Phong</p>
                 <p class="comment">Vào đấy lạc đấy b</p>
+                <div class="getComment"></div> -->
               </div>
               <div class="feedback_comment">
                 <p class="like_comment">Thích</p>
@@ -206,6 +226,10 @@
     </div>
   </div>
 </body>
+<script src="./list-img.js"></script>
+<script src="./grid-img.js"></script>
+<script src="./lib-tab.js"></script>
+<script src="./comments.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
