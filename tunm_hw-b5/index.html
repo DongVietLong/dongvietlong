@@ -1,43 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <title>profile</title>
-  </head>
 
-  <body>
-    <div
-      id="container"
-      class="d-flex m-0 p-0 w-100 justify-content-between"
-    ></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <title>profile</title>
+</head>
+
+<body>
+  <div id="container" class="d-flex m-0 p-0 w-100 justify-content-between"></div>
+  <div class="body-container">
     <div class="information d-flex">
       <div class="avatar justify-content-center">
         <img src="./Photos/avatar.jpeg" alt="avatar" />
@@ -45,16 +31,11 @@
       <div class="detail-infor d-flex">
         <div class="name d-flex">
           <h3>tunm</h3>
-          <button
-            type="button"
-            class="edit-infor border ml-4 d-flex justify-content-center align-items-center rounded"
-          >
+          <button type="button" class="edit-infor border ml-4 d-flex justify-content-center align-items-center rounded">
             Edit profile
           </button>
-          <i
-            class="fas fa-ellipsis-v ml-4 d-flex justify-content-center align-items-center"
-            style="font-size: 30px"
-          ></i>
+          <i class="fas fa-ellipsis-v ml-4 d-flex justify-content-center align-items-center"
+            style="font-size: 30px"></i>
         </div>
         <div class="follow d-flex">
           <p><strong>326 </strong>posts</p>
@@ -64,10 +45,7 @@
         <p><strong>Tú Mạnh Nguyễn</strong></p>
       </div>
     </div>
-    <div
-      style="width: 620px"
-      class="d-flex align-items-center mt-3 mb-2 mr-auto ml-auto justify-content-between"
-    >
+    <div style="width: 620px" class="d-flex align-items-center mt-3 mb-2 mr-auto ml-auto justify-content-between">
       <div class="types d-flex align-items-center">
         <i class="fa-solid fa-table-cells"></i>
         <div class="ml-2">POST</div>
@@ -81,9 +59,9 @@
         <div class="ml-2">TAGGED</div>
       </div>
     </div>
-
     <div id="app"></div>
+  </div>
+  <script src="./main.js"></script>
+</body>
 
-    <script src="./main.js"></script>
-  </body>
 </html>

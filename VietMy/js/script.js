@@ -1,24 +1,46 @@
+// var images = [
+//     "img/1.jpg",
+//     "img/2.jpg",
+//     "img/3.jpg",
+//     "img/4.jpg",
+//     "img/5.jpg",
+//     "img/6.jpg",
+//     "img/7.jpg",
+//     "img/8.jpg",
+//     "img/9.jpg"
+// ];
+// var app = document.getElementById("app");
+// var group = document.getElementsByClassName["group_img"]
+// var total = 9;
+// var ratio = 3;
+// var sizeImage = 150;
+// var space = 10;
+// var radius = 16;
 
-// document.getElementById("1").onclick = function() {Clickchange1()};
-// function Clickchange1() {
-//   const list1 = document.getElementById("1");
-//   const list2 = document.getElementById("2");
-//  list1.style.backgroundColor = "yellow";
-//  list2.style.backgroundColor = "red";
-//   console.log("aa");
-// }
-// document.getElementById("2").click = function() {Clickchange2()};
-// function Clickchange2() {
-//   const list1 = document.getElementById("1");
-//   const list2 = document.getElementById("2");
-//  list1.style.backgroundColor = "red";
-//  list2.style.backgroundColor = "yellow";
-//   console.log("bb");
-// }
+// group.style.width = sizeImage * ratio + 10 + "px";
+// group.style.height = sizeImage * ratio + 10 + "px";
+// group.style.borderRadius = radius + "px";
+var app = document.getElementById("app");
+var group = document.createElement("div");
+group.classList = ["group-image"];
 
-function myFunction() {
-  const myNodelist = document.querySelector("1");
-  for (let i = 0; i < myNodelist.length; i++) {
-    myNodelist[i].style.color = "red";
-  }
+var numImg = 9;
+var ratio = 3;
+var sizeImage = 145;
+var space = 10;
+var radius = 16;
+
+group.style.width = sizeImage * ratio + 10 + "px";
+group.style.height = sizeImage * ratio + 10 + "px";
+group.style.borderRadius = radius + "px";
+
+for (let i = 0; i < numImg; i++) {
+  let image = document.createElement("img");
+  image.src = "https://picsum.photos/200/300?random=" + i;
+  image.classList = ["image"];
+  image.style.width = sizeImage + "px";
+  image.style.height = sizeImage + "px";
+  group.appendChild(image);
 }
+
+app.appendChild(group);
