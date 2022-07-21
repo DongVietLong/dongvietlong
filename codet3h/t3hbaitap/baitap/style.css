@@ -433,7 +433,7 @@ div > i {
     color: rgb(127, 127, 242);
   }
   /* reponsive */
-  @media (min-width: 390px) and (max-width:844px){
+  @media (min-width: 820px) and (max-width:1180px){
     .header{
         width: 100%;
     }
