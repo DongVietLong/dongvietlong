@@ -12,6 +12,11 @@ let quotes = [
   "Với thế giới, bạn chỉ là một hạt cát nhỏ nhưng với một người nào đó, bạn là cả thế giới của họ.",
   "Người ta có thể quên đi điều bạn nói, nhưng những gì bạn để lại trong lòng họ thì không bao giờ nhạt phai.",
   "Con người trở nên cô đơn vì trong cuộc đời, thay vì xây những chiếc cầu người ta lại xây những bức tường.",
+  "You’ve gotta dance like there’s nobody watching, Love like you’ll never be hurt, Sing like there’s nobody listening, And live like it’s heaven on earth.",
+  "To live is the rarest thing in the world. Most people exist, that is all.",
+  "Today you are You, that is truer than true. There is no one alive who is Youer than You. ― Dr. Seuss, Happy Birthday to You!",
+  "There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.",
+  "When someone loves you, the way they talk about you is different. You feel safe and comfortable."
 ];
 
 function nextQuote() {
@@ -19,3 +24,4 @@ function nextQuote() {
   var randomElement = quotes[randomIndex];
   document.getElementById("quote").innerHTML = randomElement;
 }
+console.log(Math.random())
