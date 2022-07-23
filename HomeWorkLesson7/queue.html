@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Queue {
+            constructor() {
+                this.queue = []
+            }
+
+            enqueue(element) {
+                this.queue.push(element)
+            }
+
+            dequeue() {
+                if (this.isEmpty()) return 'Hàng đỢi trống'
+                return this.queue.shift()
+            }
+
+            peek() {
+                if (this.isEmpty()) return 'Hàng đỢi trống'
+                return this.queue[0]
+            }
+
+            // helper method
+            isEmpty() {
+                return !this.queue.length
+            }
+        }
+    </script>
+</body>
+
+</html>
