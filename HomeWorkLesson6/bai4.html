@@ -10,14 +10,11 @@
     <script>
         const input = 'Đồng Viết Long';
         var cutString=input.split(' ');
-        var ten=[];
-        cutString.map((a)=>{
-            var arr = a.split('');
-            ten.push(arr[0]);
-            return ten;
+        var result=cutString.map((a)=>{
+           return a[0];
         })
-        var result = ten.join('');
-        console.log(result);
+       
+        console.log(result.join(''));
     </script>
 </body>
 </html>

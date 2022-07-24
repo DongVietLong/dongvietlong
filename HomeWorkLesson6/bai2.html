@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        const input = [1,-4,12,0,-3,29,-150];
-        var check = input.every((a)=>{
-            return a<=0;
+        const input = [1, -4, 12, 0, -3, 29, -150];
+        var check = input.every((a) => {
+            return a <= 0;
         })
-        var sum=0;
-        input.forEach((value)=>{
-            if(check && input.length ===0){
+        var sum = 0;
+        input.forEach((value) => {
+            if (check && input.length === 0) {
                 return 0;
             }
-            else if(value > 0){
-                sum=sum + value;
+            else if (value > 0) {
+                sum = sum + value;
             }
         });
         console.log(sum);
     </script>
 </body>
+
 </html>
