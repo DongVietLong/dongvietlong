@@ -14,14 +14,14 @@ let quotes = [
   "Con người trở nên cô đơn vì trong cuộc đời, thay vì xây những chiếc cầu người ta lại xây những bức tường.",
   "You’ve gotta dance like there’s nobody watching, Love like you’ll never be hurt, Sing like there’s nobody listening, And live like it’s heaven on earth.",
   "To live is the rarest thing in the world. Most people exist, that is all.",
-  "Today you are You, that is truer than true. There is no one alive who is Youer than You. ― Dr. Seuss, Happy Birthday to You!",
+  "Today you are You, that is truer than true. There is no one alive who is Youer than You.",
   "There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.",
-  "When someone loves you, the way they talk about you is different. You feel safe and comfortable."
+  "When someone loves you, the way they talk about you is different. You feel safe and comfortable.",
 ];
 
-function nextQuote() {
+next.onclick = function nextQuote() {
   var randomIndex = Math.floor(Math.random() * quotes.length);
   var randomElement = quotes[randomIndex];
   document.getElementById("quote").innerHTML = randomElement;
-}
-console.log(Math.random())
+};
+console.log(Math.random());
