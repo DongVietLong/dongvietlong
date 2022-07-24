@@ -19,7 +19,7 @@ body {
   box-shadow: 0px 0px 5px 0px #888888;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   background: #fff;
 }
 .fb-header {
@@ -33,12 +33,9 @@ body {
   font-size: 13px;
 }
 .search {
-  padding-left: 30px !important;
   border-radius: 100px !important;
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
-  padding-right: 50px !important;
-  background-color: #e4e6eb !important;
+  padding: 20px 0 20px 30px !important;
+  width: 250px !important;
 }
 .glyphicon-search-box {
   position: relative;
@@ -55,7 +52,7 @@ body {
   border-radius: 5px;
 
   height: 50wh;
-  width: 100wh
+  width: 100wh;
 }
 .background:hover {
   background-color: #e4e6eb !important;
@@ -204,7 +201,8 @@ body {
   font-weight: bold;
   padding: 10px 20px;
 }
-.type-of-post p, .light-text {
+.type-of-post p,
+.light-text {
   opacity: 0.7;
 }
 .setting em {
@@ -217,7 +215,6 @@ body {
 }
 .fb-content {
   width: 1000px;
-  /* height: 1000px; */
   border-radius: 5px;
 }
 
@@ -249,7 +246,7 @@ body {
 .album-item {
   width: 33.333%;
   height: 33.333%;
-  padding: 5px!important;
+  padding: 5px !important;
 }
 .status img {
   width: 35px;
@@ -309,10 +306,13 @@ body {
 .fa-user-friends {
   font-size: 10px;
 }
-.fa-list, .fa-th-large, .fa-ellipsis {
+.fa-list,
+.fa-th-large,
+.fa-ellipsis {
   font-size: 18px;
 }
-.fa-random, .fa-sun {
+.fa-random,
+.fa-sun {
   font-size: 13px;
 }
 .status-share {
@@ -328,6 +328,9 @@ body {
   z-index: 4;
   position: relative;
 }
+.toggle-holder:hover {
+  cursor: pointer;
+}
 #toggle {
   flex-direction: column;
   background-color: #fff;
@@ -338,10 +341,11 @@ body {
   border: 0.2px solid;
   border-radius: 5px;
   display: none;
+  z-index: 999;
 }
 #toggle li:hover {
   background-color: rgb(227, 227, 227);
-  border-radius:3px;
+  border-radius: 3px;
 }
 
 /* tablet */
@@ -497,4 +501,16 @@ body {
     height: 100%;
     width: 100%;
   }
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
 }
