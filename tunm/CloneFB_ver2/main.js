@@ -1,20 +1,28 @@
-var x = document.getElementById("toggle");
-var modal = document.getElementById("myModal");
+var getToggle = document.getElementById("toggle");
+var modal = document.getElementById("exitToggle");
 
 window.onclick = function (event) {
-  console.log(event.target);
   if (event.target == modal) {
-    x.style.display = "none";
+    getToggle.style.display = "none";
     modal.style.display = "none";
   }
 };
 
 function toggle() {
-  if ((x.style.display = "none")) {
-    x.style.display = "flex";
+  if (!getToggle.style.display || getToggle.style.display === "none") {
+    getToggle.style.display = "flex";
     modal.style.display = "block";
+  }
+}
+
+var getMenu = document.getElementById("menu-mobile");
+
+function openMenu() {
+  if (getMenu.style.display == "none") {
+    getMenu.style.display = "flex";
+    // modal.style.display = "block";
   } else {
-    x.style.display = "none";
-    modal.style.display = "none";
+    console.log(getMenu.style.display);
+    getMenu.style.display = "none";
   }
 }

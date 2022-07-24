@@ -54,6 +54,39 @@
                         <input class="form-control mr-sm-2 bg-light search border-0" type="search"
                             placeholder="Search Facebook" aria-label="Search">
                     </div>
+                    <div id="menu" class="center" onclick="openMenu()">
+                        <em class="black fa-solid fa-bars" style="font-size:19px"></em>
+                    </div>
+                    <div id="menu-mobile" class="pl-5 pr-3 m-0 pt-0" >
+                        <div class="holder d-flex w-100 pt-3 pb-3 pl-2 mt-3">
+                            <img src="./Photo/avatar.jpg" class="menu-photo">
+                            <p class="d-flex center pl-3 m-0">Tú Mạnh Nguyễn</p>
+                        </div>
+                        <div class="holder d-flex w-100 pt-3 pb-3 pl-2">
+                            <div class="icon-holder"><i class="menu-icon fa-solid fa-user-group"></i></div>
+                            <p class="d-flex center pl-3 pr-3 m-0">Friends</p>
+                        </div>
+                        <div class="holder d-flex w-100 pt-3 pb-3 pl-2">
+                            <div class="icon-holder"><i class="menu-icon fa-solid fa-clock"></i></div>
+                            <p class="d-flex center pl-3 pr-3 m-0">Memories</p>
+                        </div>
+                        <div class="holder d-flex w-100 pt-3 pb-3 pl-2">
+                            <div class="icon-holder"><i class="menu-icon fa-solid fa-people-group"></i></div>
+                            <p class="d-flex center pl-3 pr-3 m-0">Groups</p>
+                        </div>
+                        <div class="holder d-flex w-100 pt-3 pb-3 pl-2">
+                            <div class="icon-holder"><i class="menu-icon fa-solid fa-shop"></i></div>
+                            <p class="d-flex center pl-3 pr-3 m-0">Marketplace</p>
+                        </div>
+                        <div class="holder d-flex w-100 pt-3 pb-3 pl-2">
+                            <div class="icon-holder"><i class="menu-icon fa-solid fa-tv"></i></div>
+                            <p class="d-flex center pl-3 pr-3 m-0">Watch</p>
+                        </div>
+                        <div class="holder d-flex w-100 pt-3 pb-3 pl-2">
+                            <div class="icon-holder"><i class="menu-icon fa-solid fa-angle-down ml-2"></i></div>
+                            <p class="d-flex center pl-3 pr-3 m-0">See more</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="category d-flex center justify-content-center">
                     <ul class="d-flex center m-0 center-nav">
@@ -129,7 +162,7 @@
                 <div class="cover">
                     <img class="cover-photo" src="./Photo/cover.jpg" alt="edit-cover">
                     <div class="edit-cover d-flex center">
-                        <div class=""><em class="fas fa-camera"></em></div>
+                        <div class="d-flex center"><em class="fas fa-camera"></em></div>
                         <p class="m-0 pl-2">Edit cover photo</p>
                     </div>
                 </div>
@@ -189,7 +222,7 @@
                         <div class="d-flex center toggle-holder">
                             <li onclick="toggle()">More
                                 <em class="fas fa-caret-down"></em>
-                                <div id="myModal" class="modal"></div>
+                                <div id="exitToggle" class="exitToggle"></div>
 
                                 <ul id="toggle">
                                     <li>Sport</li>
@@ -256,8 +289,8 @@
                     </div>
                     <div class="left-content-photo mt-5">
                         <div class="photo d-flex justify-content-between align-items-center pt-4 pb-4">
-                            <h3 class="m-0">Photos</h3>
-                            <p class="m-0">See all photos</p>
+                            <h3 class="Photo m-0">Photos</h3>
+                            <p class="seeAll m-0">See all photos</p>
                         </div>
                         <div class="album d-flex center flex-wrap">
                             <div class="album-item col-4">
@@ -293,9 +326,9 @@
                 <div class="right-content col-md-7 col-sm-12 col-12">
                     <div class="right-content-post">
                         <div class="post border-bottom">
-                            <div class="status d-flex center pb-3">
+                            <div class="status d-flex align-items-center pb-3">
                                 <img class="" src="./Photo/avatar.jpg" alt="avatar icon">
-                                <input class="form-control bg-light search pr-5 ml-3" style="font-size:13px"
+                                <input class="form-control bg-light search pr-5 ml-3 w-100" style="font-size:13px"
                                     type="search" placeholder="What's on your mind?" aria-label="Search">
                             </div>
                         </div>
