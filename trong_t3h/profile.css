@@ -1,0 +1,337 @@
+body{
+    margin: 0;
+    font-family: inherit;
+    background-color: #e4e6eb;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.514);
+        font-size: 56px;
+        width: 100%;
+    }
+    
+    .search-bar {
+        float: left;
+        font-size: 40px;
+    }
+    
+    .icon-bar {
+        margin-left: 612px;
+    }
+    
+    .icon-bar a {
+        float: left;
+        display: block;
+        color: black;
+        padding: 14px 51px;
+        font-size: 28px;
+    }
+    
+    .icon-bar a:hover {
+        background-color: #ddd;
+        border-radius: 1rem;
+        color: black;
+    }
+* {
+    box-sizing: border-box;
+  }
+.col-1, .col2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+
+background-color: #ffff;
+background-clip: content-box;
+/* margin-top: 8px; */
+/* margin-bottom: 8px; */
+
+}
+.cover-image{
+    width: 100%;
+    height: 300px;
+    /* background-color: aqua; */
+    background-image: url(./image/anh-la-co-viet-nam-dep-1.png);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.avatar{
+    display: flex;  
+    margin-bottom: 10px;
+}
+
+.no-gutters{
+    padding-left: 0;
+    padding-top: 0;
+}
+
+.image-avatar{
+    width: 168px;
+    height: 168px;
+    border: 3px solid white;
+}
+#one{
+    text-align: left;
+    
+}
+
+#btn-1{
+    text-align: right;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#btn-2{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.navbar-bootstrap{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffff;
+}
+.btnn{
+    width: 50px;
+    height: 40px;
+    
+    margin-top: 10px;
+}
+#two{
+    margin-top: 70px;
+}
+.profile-info{
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.profile-intro{
+    background: rgb(250, 245, 245);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.profile-post{
+    background: rgb(250, 245, 245);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.storytelling{
+    background: #e4e6eb;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    width: 100%;
+    border-radius: 4px;
+    margin: 10px;
+}
+.profile-intro ul{
+    margin-top: 15px;
+}
+
+.profile-intro ul li{
+    list-style: none;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.profile-intro ul li img{
+    margin-right: 10px;
+}
+
+.title-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.photo-box{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    margin-top: 15px;
+}
+.photo-box div img{
+    width: 100%;
+    cursor: pointer;
+}
+.friend-box{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    margin-top: 15px;
+}
+.friend-box div img{
+    width: 100%;
+    cursor: pointer;
+}
+.write img{
+    width: 50px;
+    height: 50px;
+    border: 0;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.write{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* border-radius: 50px; */
+}
+
+.video{
+    display: flex;
+    margin-top: 10px;
+    border-top: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    flex-grow: 4;
+}
+.video i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    
+    
+}
+.profile-posts-top{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+}
+.profile-posts-bottom{
+    border-top: 1px solid black;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .avatar{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        
+    }
+    
+    #one{
+        text-align: center;
+    }
+    #btn-1{
+        text-align: center;
+    }
+    #btn-2{
+        text-align: center;
+    }
+    #two{
+        margin-top: 0;
+    }
+    .profile-info{
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .photo-box div img{
+        width: 100%;
+        /* height: 215px; */
+        cursor: pointer;
+    }
+    .friend-box div img{
+        width: 100%;
+        /* height: 215px; */
+        cursor: pointer;
+    }
+    
+    
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .avatar{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #one{
+        text-align: center;
+    }
+    #two{
+        margin-top: 0;
+    }
+    .profile-info{
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .photo-box div img{
+        width: 100%;
+        /* height: 215px; */
+        cursor: pointer;
+    }
+    .friend-box div img{
+        width: 100%;
+        /* height: 215px; */
+        cursor: pointer;
+    }
+    .vid{
+        margin-left: 50px;
+    }
+    
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .avatar{
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center; 
+        
+    }
+    #one{
+        text-align: center;
+    }
+    #two{
+        margin-top: 0;
+    }
+    .profile-info{
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .photo-box div img{
+        width: 100%;
+        /* height: 215px; */
+        cursor: pointer;
+    }
+    .friend-box div img{
+        width: 100%;
+        /* height: 215px; */
+        cursor: pointer;
+    }
+    
+
+}
+
+.navbar-bootstrap{
+    display: flex;
+    justify-content: space-between;
+}

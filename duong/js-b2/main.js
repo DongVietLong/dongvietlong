@@ -114,7 +114,8 @@ function createTab(tabs, root) {
     seeMore.style.fontWeight = 'bold';
     seeMore.style.height = '36px';
     seeMore.style.padding = '0px 16px';
-    seeMore.style.borderRadius = '6px';
+    seeMore.style.borderRadius = '6px'; 
+    seeMore.style.cursor = 'pointer';
     seeMore.innerHTML = "...";
     nav.appendChild(seeMore)
 }
