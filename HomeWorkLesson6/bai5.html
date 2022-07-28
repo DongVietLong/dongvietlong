@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const input = [
+            {
+                name: 'john',
+                age: 13,
+            },
+            {
+                name: 'mark',
+                age: 56,
+            },
+            {
+                name: 'reachel',
+                age: 45,
+            },
+            {
+                name: 'nate',
+                age: 67,
+            },
+            {
+                name: 'jeniffer',
+                age: 65,
+            },
+        ];
+        var newArr = [];
+        var max = input.reduce((acc, current) => {
+            return (acc > current.age) ? acc : current.age;
+        }, input[0].age)
+        newArr.push(max);
+        var min = input.reduce((acc, current) => {
+            return (acc < current.age) ? acc : current.age;
+        }, input[0].age)
+        newArr.push(min);
+        newArr.push(max - min);
+        console.log(newArr);
+    </script>
+</body>
+
+</html>
