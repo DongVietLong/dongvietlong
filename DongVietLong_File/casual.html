@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .img {
+        height: 200px;
+    }
+
+    .box-img {
+        display: flex;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div class="box-img">
+        <button class="buttonLeft">NEXT --</button>
+        <img class="img" src="" alt="">
+        <button class="buttonRight">NEXT ++</button>
+</div>
+</body>
+<script>
+    var img = [
+    "A.jpg", "B.jpg", "C.jpg", "D.jpg"
+];
+var indexSlice = document.querySelector('.img');
+var nextBtn = document.querySelector('.buttonRight');
+var prevBtn = document.querySelector('.buttonLeft');
+var caheID = 0;
+indexSlice.src = img[0];
+var setTime = setInterval(function () {
+    nextSlice();
+}, 3000)
+clearInterval(setTime);
+nextBtn.onclick = function () {
+    clearInterval(setTime);
+    nextSlice();
+}
+prevBtn.onclick = function () {
+    clearInterval(setTime);
+    prevSlice();
+}
+function nextSlice() {
+    caheID++;
+    if (caheID >= img.length) {
+        caheID = 0;
+    }
+    setImg(caheID);
+}
+function prevSlice() {
+    caheID--;
+    if (caheID <= 0) {
+        caheID = img.length - 1;
+    }
+    setImg(caheID);
+}
+function setImg(index) {
+    indexSlice.src = img[index];
+}
+</script>
+</html>
