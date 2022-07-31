@@ -6,16 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Cá Nhân</title>
 
-    <style>
-        .active {
-            color: #2374e1 !important;
-            border-bottom: 3px solid #2374e1;
-        }
-    </style>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./responsive.css">
 </head>
 <body>
@@ -23,7 +18,7 @@
         <header class="header">
             <div class="container container-xl container-md">
                 <div class="row">
-                    <div class="col col-xl-3 col-lg-3 col-md-6">
+                    <div class="col-12 col-sm-9 col-md-5 col-lg-3">
                         <section class="header__logo-and-search d-flex">
                             <a href="#">
                                 <img class="header__logo-facebook" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png" alt="logo facebook">
@@ -34,18 +29,18 @@
                             </div>
                         </section>
                     </div>
-                    <div class="col col-xl-6 col-lg-6 col-md-2">
-                        <div class="header__navbar-list d-flex">
+                    <div class="col col-sm-3 col-md-3 col-lg-6">
+                        <div class="header__navbar-list d-none d-sm-flex">
                             <a class="header__navbar-list-link" href="#"><i class="fa-solid fa-house"></i></a>
-                            <a class="header__navbar-list-link" href="#"><i class="fa-solid fa-user-group"></i></a>
-                            <a class="header__navbar-list-link" href="#"><i class="fa-solid fa-backward-step"></i></a>
-                            <a class="header__navbar-list-link" href="#"><i class="fa-solid fa-people-group"></i></a>
-                            <a class="header__navbar-list-link" href="#"><i class="fa-solid fa-gamepad"></i></a>
+                            <a class="header__navbar-list-link d-none d-lg-block" href="#"><i class="fa-solid fa-user-group"></i></a>
+                            <a class="header__navbar-list-link d-none d-lg-block" href="#"><i class="fa-solid fa-backward-step"></i></a>
+                            <a class="header__navbar-list-link d-none d-xl-block" href="#"><i class="fa-solid fa-people-group"></i></a>
+                            <a class="header__navbar-list-link d-none" href="#"><i class="fa-solid fa-gamepad"></i></a>
                             <a class="header__navbar-list-link" href="#"><i class="fa-solid fa-bars"></i></a>
                         </div>
                     </div>
-                    <div class="col col-xl-3 col-lg-3 col-md-4">
-                        <div class="header__navbar-user d-flex">
+                    <div class="col col-sm-0 col-md-4 col-lg-3">
+                        <div class="header__navbar-user d-none d-md-flex">
                             <a class="header__navbar-user-link" href="#"><i class="header__navbar-user-link-icon fa-solid fa-bars"></i></a>
                             <a class="header__navbar-user-link" href="#"><i class="header__navbar-user-link-icon fa-brands fa-facebook-messenger"></i></a>
                             <a class="header__navbar-user-link" href="#"><i class="header__navbar-user-link-icon fa-solid fa-bell"></i></a>
@@ -81,16 +76,16 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="col col-xl-4 pl-0 col-lg-4 col-md-12">
+                            <div class="col col-xl-4 pl-0 col-lg-3 col-md-42">
                                 <div class="infomation d-flex">
                                     <span class="infomation__name">Bùi Văn Sự</span>
                                     <a class="infomation__list-friend" href="#">19 bạn bè</a>
                                     <div class="infomation__des-friend-wrap">
                                         <section class="infomation__des-friend">
-                                            <img class="thumbnail-friend1" src="https://st.depositphotos.com/1005920/2667/i/450/depositphotos_26678809-stock-photo-logout-icon.jpg" alt="">
-                                            <img class="thumbnail-friend2" src="https://image.shutterstock.com/image-vector/user-log-off-icon-flat-260nw-742110784.jpg" alt="">
-                                            <img class="thumbnail-friend3" src="https://st.depositphotos.com/1008768/4036/i/600/depositphotos_40361845-stock-photo-logout-icon.jpg" alt="">
-                                            <img class="thumbnail-friend4" src="https://images-na.ssl-images-amazon.com/images/I/61cLa-1q0fL.png" alt="">
+                                            <img class="thumbnail-friend friend1" src="https://st.depositphotos.com/1005920/2667/i/450/depositphotos_26678809-stock-photo-logout-icon.jpg" alt="">
+                                            <img class="thumbnail-friend friend2" src="https://image.shutterstock.com/image-vector/user-log-off-icon-flat-260nw-742110784.jpg" alt="">
+                                            <img class="thumbnail-friend friend3" src="https://st.depositphotos.com/1008768/4036/i/600/depositphotos_40361845-stock-photo-logout-icon.jpg" alt="">
+                                            <img class="thumbnail-friend friend4" src="https://images-na.ssl-images-amazon.com/images/I/61cLa-1q0fL.png" alt="">
                                             <i class="infomation__des-friend-add fa-solid fa-ellipsis"></i>
                                         </section>
                                     </div>
@@ -113,19 +108,33 @@
                     </div>
                 </div>
                 <div class="navbar-activate d-flex">
-                    <a class="navbar-activate-icon d-block" href="">Bài viết</a>               
-                    <a class="navbar-activate-icon d-block" href="">Giới thiệu</a>               
-                    <a class="navbar-activate-icon d-block" href="">Bạn bè</a>              
-                    <a class="navbar-activate-icon d-block active" href="">Ảnh</a>              
-                    <a class="navbar-activate-icon d-block" href="">Video</a>               
-                    <a class="navbar-activate-icon d-block" href="">Check in</a>           
-                    <a class="navbar-activate-icon d-block" href="">Xem thêm
-                        <i class="navbar-activate-more fa-solid fa-sort-down"></i>
-                    </a>           
+                    <a href="" class="navbar-activate-icon" onclick="return false">Bài viết</a>               
+                    <a href="" class="navbar-activate-icon" onclick="return false">Giới thiệu</a>               
+                    <a href="" class="navbar-activate-icon" onclick="return false">Bạn bè</a>              
+                    <a href="#img" class="navbar-activate-icon active">Ảnh</a>              
+                    <a href="#video" class="navbar-activate-icon">Video</a>               
+                    <a href="#sport" class="navbar-activate-icon">Thể thao</a>         
+                    <a href="#music" class="navbar-activate-icon">Âm nhạc</a>         
+                    <div class="dropdown show">
+                        <a class="btn btn-secondary dropdown-toggle navbar-activate-icon-see-more" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Xem thêm
+                        </a>
+                      
+                        <div class="dropdown-menu" id="navbar__see-more-list" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" id="navbar__see-more-icon" href="#">Thể thao</a>
+                          <a class="dropdown-item" id="navbar__see-more-icon" href="#">Âm nhạc</a>
+                          <a class="dropdown-item" id="navbar__see-more-icon" href="#">Phim</a>
+                          <a class="dropdown-item" id="navbar__see-more-icon" href="#">Chương trình TV</a>
+                          <a class="dropdown-item" id="navbar__see-more-icon" href="#">Sách</a>
+                          <a class="dropdown-item" id="navbar__see-more-icon" href="#">Thích</a>
+                          <a class="dropdown-item" id="navbar__see-more-icon" href="#">Sự kiện</a>
+                          <a class="dropdown-item" id="navbar__see-more-icon" href="#">Câu hỏi</a>
+                        </div>
+                      </div>    
                 </div>
             </section>
 
-            <div class="img set-item">
+            <div id="img" class="img set-item">
                 <section class="head">
                     <a class="head-name" href="">Ảnh</a>
                     <button class="head__add-img-video">Thêm ảnh/video</button>
@@ -140,60 +149,60 @@
                 <div class="img__list">
                     <div class="container p-0">
                         <div class="row row-fix">
-                            <div class="col col-fix col-xl-3 col-lg-4 col-md-6">
-                                <div class="img__and-edit">
+                            <div class="col col-fix col-xl-1-5 col-lg-3 col-md-4">
+                                <a target="_blank" href="https://scontent.fhan14-1.fna.fbcdn.net/v/t1.6435-9/171802164_792826574974825_5620013260981336038_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=67qRXVKgg98AX939HDq&_nc_ht=scontent.fhan14-1.fna&oh=00_AT9FYiryoALsYE7MjPMqRB2Ar5DJUONp2ANN4I06NFOSZg&oe=62ED33E9" class="img__and-edit">
                                     <img class="img__link" src="https://scontent.fhan14-1.fna.fbcdn.net/v/t1.6435-9/171802164_792826574974825_5620013260981336038_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=67qRXVKgg98AX939HDq&_nc_ht=scontent.fhan14-1.fna&oh=00_AT9FYiryoALsYE7MjPMqRB2Ar5DJUONp2ANN4I06NFOSZg&oe=62ED33E9" alt="">
                                     <i class="img__and-edit-icon fa-solid fa-pen"></i>
-                                </div>
+                                </a target="_blank" href="">
                             </div>
-                            <div class="col col-fix col-xl-3 col-lg-4 col-md-6">
+                            <a target="_blank" href="https://phunuhiendai.vn/wp-content/uploads/2021/05/Square-39-l%C3%A0-Qu%C3%A1n-c%C3%A0-ph%C3%AA-high-camping6.jpeg" class="col col-fix col-xl-1-5 col-lg-3 col-md-4">
                                 <div class="img__and-edit">
                                     <img class="img__link" src="https://phunuhiendai.vn/wp-content/uploads/2021/05/Square-39-l%C3%A0-Qu%C3%A1n-c%C3%A0-ph%C3%AA-high-camping6.jpeg" alt="">
                                     <i class="img__and-edit-icon fa-solid fa-pen"></i>
                                 </div>
-                            </div>
-                            <div class="col col-fix col-xl-3 col-lg-4 col-md-6">
+                            </a>
+                            <a target="_blank" href="https://images-na.ssl-images-amazon.com/images/I/61cLa-1q0fL.png" class="col col-fix col-xl-1-5 col-lg-3 col-md-4">
                                 <div class="img__and-edit">
                                     <img class="img__link" src="https://images-na.ssl-images-amazon.com/images/I/61cLa-1q0fL.png" alt="">
                                     <i class="img__and-edit-icon fa-solid fa-pen"></i>
                                 </div>
-                            </div>
-                            <div class="col col-fix col-xl-3 col-lg-4 col-md-6">
+                            </a>
+                            <a target="_blank" href="https://images.unsplash.com/photo-1597589827317-4c6d6e0a90bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3F1YXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="col col-fix col-xl-1-5 col-lg-3 col-md-4">
                                 <div class="img__and-edit">
                                     <img class="img__link" src="https://images.unsplash.com/photo-1597589827317-4c6d6e0a90bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3F1YXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
                                     <i class="img__and-edit-icon fa-solid fa-pen"></i>
                                 </div>
-                            </div>
-                            <div class="col col-fix col-xl-3 col-lg-4 col-md-6">
+                            </a>
+                            <a target="_blank" href="https://images.unsplash.com/photo-1504600770771-fb03a6961d33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c3F1YXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="col col-fix col-xl-1-5 col-lg-3 col-md-4">
                                 <div class="img__and-edit">
                                     <img class="img__link" src="https://images.unsplash.com/photo-1504600770771-fb03a6961d33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c3F1YXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
                                     <i class="img__and-edit-icon fa-solid fa-pen"></i>
                                 </div>
-                            </div>
-                            <div class="col col-fix col-xl-3 col-lg-4 col-md-6">
+                            </a>
+                            <a target="_blank" href="https://images.unsplash.com/photo-1525351326368-efbb5cb6814d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c3F1YXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="col col-fix col-xl-1-5 col-lg-3 col-md-4">
                                 <div class="img__and-edit">
                                     <img class="img__link" src="https://images.unsplash.com/photo-1525351326368-efbb5cb6814d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c3F1YXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
                                     <i class="img__and-edit-icon fa-solid fa-pen"></i>
                                 </div>
-                            </div>
-                            <div class="col col-fix col-xl-3 col-lg-4 col-md-6">
+                            </a>
+                            <a target="_blank" href="https://images.unsplash.com/photo-1512764898391-bcbc96ac9b58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=449&q=80" class="col col-fix col-xl-1-5 col-lg-3 col-md-4">
                                 <div class="img__and-edit">
                                     <img class="img__link" src="https://images.unsplash.com/photo-1512764898391-bcbc96ac9b58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=449&q=80" alt="">
                                     <i class="img__and-edit-icon fa-solid fa-pen"></i>
                                 </div>
-                            </div>
-                            <div class="col col-fix col-xl-3 col-lg-4 col-md-6">
+                            </a>
+                            <a target="_blank" href="https://images.unsplash.com/photo-1600354587397-681c16c184bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNxdWFyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="col col-fix col-xl-1-5 col-lg-3 col-md-4">
                                 <div class="img__and-edit">
                                     <img class="img__link" src="https://images.unsplash.com/photo-1600354587397-681c16c184bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNxdWFyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
                                     <i class="img__and-edit-icon fa-solid fa-pen"></i>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="video set-item">
+            <div id="video" class="video set-item">
                 <section class="head">
                     <a class="head-name" href="">Video</a>
                     <button class="head__head-setting">
@@ -205,7 +214,7 @@
                 </ul>
             </div>
 
-            <div class="sport set-item">
+            <div id="sport" class="sport set-item">
                 <section class="head">
                     <a class="head-name" href="">Thể thao</a>
                     <button class="head__head-setting">
@@ -218,7 +227,7 @@
                 </ul>
             </div>
 
-            <div class="music set-item">
+            <div id="music" class="music set-item">
                 <section class="head">
                     <a class="head-name" href="">Âm nhạc</a>
                     <button class="head__head-setting">
@@ -233,7 +242,6 @@
         
     </div>
 
-    <!-- <script src="./script.js"></script> -->
     <script src="./script.js" ></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

@@ -27,18 +27,16 @@
 .isNaN() Kiểm tra xem một giá trị nào đó có phải là NaN hay không
 
 
-
-
-- reduce() thực thi một hàm lên các phần tử của mảng
+# reduce() thực thi một hàm lên các phần tử của mảng
 + reduce() nhận 2 biến truyền vào:
 #1. function 
 #2. giá trị khởi tạo(biến lưu trữ)
 
-- find() để tìm kiếm các phần tử trong mảng. luôn trả về 1 đối tượng tìm thấy đầu tiên
+# find() để tìm kiếm các phần tử trong mảng. luôn trả về 1 đối tượng tìm thấy đầu tiên
 
-- filter() để tìm kiếm các phần tử trong mảng. trả về tất cả các đối tượng tìm được
-
-# forEach() duyệt qua từng phần tử của mảng 
+# filter() để tìm kiếm các phần tử trong mảng. trả về tất cả các đối tượng tìm được
+# map() không thay đổi trực tiếp lên mảng gốc
+# forEach() duyệt qua từng phần tử của mảng, thay đổi trực tiếp trên mảng
 VD: array.forEach(function(item, index) {
 console.log(item. index)
 }); // sẽ lấy ra từng phần tử(item) và chỉ số(index) của phần tử đó //

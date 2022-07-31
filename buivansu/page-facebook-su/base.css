@@ -1,0 +1,15 @@
+a:hover {
+    text-decoration: none;
+}
+
+.cover-image__btn-edit:hover,
+.edit-information__add-new:hover,
+.edit-information__plus-wrap:hover,
+.avatar__btn-edit:hover,
+.head__add-img-video:hover,
+.head__head-setting:hover,
+.navbar-activate-icon:hover,
+.head__des-item,
+.img__and-edit-icon:hover {
+    cursor: pointer;
+}

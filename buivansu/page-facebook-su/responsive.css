@@ -47,8 +47,17 @@
     }
 
     .img__and-edit {
-        max-height: 350px !important;
+        max-height: 220px !important;
     }
+
+    .edit-information {
+        padding-top: 15px;
+    }
+
+    .edit-information__btn {
+        flex: 1;
+    }
+
 }
 
 
@@ -70,10 +79,11 @@
         max-height: 260px !important;
     }
 
+    .img__and-edit {
+        max-height: 200px !important;
+    }
+
 }
-
-
-
 
 
 @media (min-width: 1200px) {
@@ -101,6 +111,11 @@
 
     .header__navbar-list a:last-child {
         display: none;
+    }
+
+    .col-xl-1-5 {
+        flex: 0 0 20%;
+        max-width: 20%;
     }
 
 }
