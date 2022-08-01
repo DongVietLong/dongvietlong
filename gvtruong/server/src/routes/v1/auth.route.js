@@ -291,7 +291,6 @@ module.exports = router;
  *               message: verify email failed
  */
 
-
 /**
  * @swagger
  * /auth/whoami:

@@ -43,7 +43,6 @@ const sendVerificationEmail = catchAsync(async (req, res) => {
 });
 
 const whoami = catchAsync(async (req, res) => {
-  console.log('show  : ', req.user)
  const user = await userService.getUserByEmail(req.user.email);
   res.send(user);
 })
