@@ -10,7 +10,7 @@ const {printRoute} = require("./utils/print");
 const auth = require("./middlewares/auth");
 const ApiError = require("./utils/ApiError");
 const httpStatus = require("http-status");
-const crypto = require('crypto') // <---- built-in nodejs package
+const crypto = require('crypto')
 
 let server;
 mongoose.connect(config.mongoose.url, config.mongoose.options).then(async (conn) => {
@@ -44,7 +44,6 @@ mongoose.connect(config.mongoose.url, config.mongoose.options).then(async (conn)
 
   // initializing our multer storage
   const upload = multer({storage});
-
 
   // route for uploading a file
   app.post('/v1/media/upload', auth(), upload.single('file'), (req, res) => {

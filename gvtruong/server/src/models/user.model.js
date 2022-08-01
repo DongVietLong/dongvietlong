@@ -44,6 +44,14 @@ const userSchema = mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    avatar: {
+      type: String,
+      required: false,
+    },
+    background: {
+      type: String,
+      required: false,
+    },
   },
   {
     timestamps: true,
