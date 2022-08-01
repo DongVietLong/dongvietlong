@@ -13,6 +13,7 @@ router.post('/refresh-tokens', validate(authValidation.refreshTokens), authContr
 router.post('/forgot-password', validate(authValidation.forgotPassword), authController.forgotPassword);
 router.post('/reset-password', validate(authValidation.resetPassword), authController.resetPassword);
 router.post('/send-verification-email', auth(), authController.sendVerificationEmail);
+router.get('/whoami', auth(), authController.whoami);
 router.post('/verify-email', validate(authValidation.verifyEmail), authController.verifyEmail);
 
 module.exports = router;
@@ -288,4 +289,21 @@ module.exports = router;
  *             example:
  *               code: 401
  *               message: verify email failed
+ */
+
+
+/**
+ * @swagger
+ * /auth/whoami:
+ *   get:
+ *     summary: get user information
+ *     description: if authentication, get user information
+ *     tags: [Auth]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       "204":
+ *         description: No content
+ *       "401":
+ *         $ref: '#/components/responses/Unauthorized'
  */
