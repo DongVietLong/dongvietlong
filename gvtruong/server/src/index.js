@@ -11,6 +11,8 @@ const auth = require("./middlewares/auth");
 const ApiError = require("./utils/ApiError");
 const httpStatus = require("http-status");
 const crypto = require('crypto')
+const {updateUserById} = require("./services/user.service");
+const {backendURL} = require("./config/config");
 
 let server;
 mongoose.connect(config.mongoose.url, config.mongoose.options).then(async (conn) => {
@@ -46,7 +48,13 @@ mongoose.connect(config.mongoose.url, config.mongoose.options).then(async (conn)
   const upload = multer({storage});
 
   // route for uploading a file
-  app.post('/v1/media/upload', auth(), upload.single('file'), (req, res) => {
+  app.post('/v1/media/upload', auth(), upload.single('file'),async (req, res) => {
+    console.log('show req,',req.query)
+    if(req.query.type === 'avatar' || req.query.type === 'background'){
+      await updateUserById(req.user.id, {
+        [req.query.type]: `${backendURL}/v1/media/${req.file.filename}`
+      })
+    }
     res.json(req.file)
   })
 
