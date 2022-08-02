@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Person(name,age)
+        {
+            this.name=name;
+            this.age=age;
+        }
+        var listName = [
+        "Jacob",
+        "Michael",
+        "Ethan",
+        "Joshua",
+        "Daniel",
+        "Alexander",
+        "Anthony",
+        "William",
+        "Christopher",
+        "Matthew",
+        "Jayden",
+        "Andrew",
+        "Joseph",
+        "David",
+        "Noah",
+        "Aiden",
+        "James",
+        "Ryan",
+        "Logan",
+    ]
+        const Person1 = new Person(listName[Math.floor(Math.random() * listName.length)],Math.floor(Math.random()*60));
+        console.log(Person1);
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class ListNode {  // trien khai mot danh sach
+            constructor(data)
+            {
+                this.data=data
+                this.next=null
+            }
+        }
+        class LinkedList {   // trien khai danh sach duoc lien ket
+            constructor(head = null)
+            {
+                this.head=head
+            }
+        }
+        let node1 = new ListNode(2)  // tao mot danh sach lien ket
+        let node2 = new ListNode(5)
+        node1.next = node2   // tro con tro 1 sang phan tu 2
+        let list = new LinkedList(node1) // tao mot danh sach duoc lien ket voi node 1
+        console.log(list.head.next.data);
+    </script>
+</body>
+</html>

@@ -14,14 +14,15 @@ container.style.borderBottom = "1px solid black";
 headerContainer.src =
   "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/840px-Instagram_logo.svg.png";
 
-headerContainer.style.width = 15 + "%";
-headerContainer.style.height = 15 + "%";
-searchIcon.classList = ["fa-solid fa-magnifying-glass"];
-headerContainer.style.width = 15 + "%";
-headerContainer.style.height = 15 + "%";
+headerContainer.style.width = 158 + "px";
+headerContainer.style.height = 56 + "px";
+headerContainer.classList = ["logo"]
+searchIcon.classList = ["search-icon fa-solid fa-magnifying-glass"];
 searchBox.type = "search";
 searchBox.placeholder = "Search";
-searchBox.classList = ["search-box form-control mr-sm-2 bg-light search pr-5 border-0"];
+searchBox.classList = [
+  "search-box form-control mr-sm-2 bg-light search pr-5 border-0",
+];
 searchBox.style.width = 300 + "px";
 searchBox.style.height = 50 + "px";
 home.classList = ["fa-solid fa-house h4 mb-0"];
@@ -32,8 +33,9 @@ avatarIcon.style.width = 30 + "px";
 avatarIcon.style.height = 30 + "px";
 avatarIcon.style.borderRadius = 50 + "%";
 
-wrapSearch.classList =
-  ["position-relative d-flex justify-content-center align-items-center pr-4 rounded mb-3"];
+wrapSearch.classList = [
+  "wrapSearch position-relative justify-content-center align-items-center pr-4 rounded mb-3",
+];
 wrapSearch.style.backgroundColor = "#F8F9FA";
 
 wrapSearch.appendChild(searchBox);
@@ -46,8 +48,9 @@ category.appendChild(home);
 category.appendChild(messenger);
 category.appendChild(post);
 category.appendChild(avatarIcon);
-category.classList =
-  ["d-flex justify-content-between w-25 align-items-center mb-3 mr-5"];
+category.classList = [
+  "d-flex justify-content-between w-25 align-items-center mb-3 mr-5",
+];
 
 var album = document.getElementById("app");
 var group = document.createElement("div");
@@ -84,3 +87,5 @@ for (let i = 0; i < images.length; i++) {
 }
 
 album.appendChild(group);
+
+

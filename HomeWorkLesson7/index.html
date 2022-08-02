@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Stack {
+            constructor() {
+                this.Stack = []
+            }
+            // đẩy các phần từ vào một mảng để tạo dữ liệu stack
+            push(element) {
+                this.Stack.push(element)
+            }
+            // xoá phần tử top của stack và trả về giá trị top
+            pop() {
+                if (this.isEmpty())
+                    return 'ngăn xếp trống'
+                return this.Stack.pop()
+            }
+            // trả về giá trị top của stack
+            peek() {
+                if (this.isEmpty())
+                    return 'ngăn xếp trống'
+                return this.Stack[this.Stack.length - 1]
+            }
+            // check
+            isEmpty() {
+                return !this.Stack.length
+            }
+        }
+
+    </script>
+</body>
+
+</html>

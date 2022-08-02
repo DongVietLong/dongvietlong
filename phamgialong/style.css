@@ -1,0 +1,101 @@
+body{
+    background-color: rgb(200, 194, 245);
+}
+.navbar {
+    height: 100px;
+    background-color: white;
+    padding: 0 80px 0 80px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right {
+    margin-left: auto;
+}
+
+.image-logo {
+    width: 30%;
+}
+
+.image-home {
+    width: 40%;
+}
+
+i {
+    float:right
+}
+
+.content {
+    /* Chiều rộng bằng 100% chiều rộng thằng cha */
+    width: 100%; 
+    /* Chiều cao là 200 pixel */
+    height: 200px;
+    /* Màu nền là màu trắng  */
+    background-color: white;
+    /* Cách thằng trước nó 30px, từ đường viền đến thằng trước đấy  */
+    margin-top: 30px;
+    /* Cách nội dung trong thẻ div 30px, nghĩa là từ đường viền đến nội dung bên trong */
+    padding: 30px;
+    /* Cho 2 thẻ div căn theo phương ngang không bị xuống dòng  */
+    display: flex;
+    
+}
+.imgcontent {
+    height: 200px;
+}
+
+.container {
+    padding: 20px;
+    width: 35%;
+}
+
+.head {
+    color: #2d67ad;
+    display: inline;
+    /* Gạch chân chữ: không */
+    text-decoration: none;
+    /* Chế độ chữ: VIẾT HOA TẤT CẢ */
+    text-transform: uppercase;
+    /* Độ đâm của chữ */
+    font-weight: 700;
+}
+
+.title {
+    /* Màu chữ */
+    color: #2a2a2a;
+    /* Font chữ */
+    font-family: notosans-bold;
+    /* Kích thước chữ */
+    font-size: 25px;
+    /* Khoảng cách từ đường viền đến thằng bên dưới */
+    margin-bottom: 10px;
+    font-weight: 700;
+    /* Khoảng cách từ đường viền đến thằng bên trên */
+    margin-top: 10px;
+}
+
+.description {
+    color: #6c6c6c;
+    font-family: arial;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 10px;
+}
+.column {
+    width: 100%;
+}
+@media (min-width:600px) {
+    .column {
+        width: 50%;
+    }
+}
+.hi {
+
+table{border: 2px solid red;}
+  th{border: 5px dotted black;}
+  td{border: 1px dashed blue;}
+ table{border-collapse: collapse;}
+ td{padding: 20px 40px;}
+ table,th,td{border: 1px solid black;}
+}

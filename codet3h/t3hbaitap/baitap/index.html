@@ -16,8 +16,29 @@
 </head>
 
 <body>
+  <div class="header_menu">
+      <div class="navbar_search">
+        <img src="./md_5aeedeff67ded.jpg" alt="" class="avt_listfriend">
+        <div class="block_search">
+          <i class="fa-solid fa-magnifying-glass icon_search"></i>
+          <input type="text" class="input_search" placeholder="Tìm kiếm trên facebook">
+        </div>
+      </div>
+      <div class="list_icon">
+        <i class="fa-solid fa-house-chimney icon_navbar_center"></i>
+        <i class="fa-solid fa-font-awesome icon_navbar_center"></i>
+        <i class="fa-brands fa-youtube icon_navbar_center"></i>
+        <i class="fa-solid fa-store icon_navbar_center"></i>
+        <i class="fa-solid fa-window-frame icon_navbar_center"></i>
+      </div>
+      <div class="list_icon">
+        <i class="fa-solid fa-bars icon_navbar_center"></i>
+        <i class="fa-brands fa-facebook-messenger icon_navbar_center"></i>
+        <i class="fa-solid fa-bell icon_navbar_center"></i>
+      </div>
+  </div>
   <header class="header row bg-light">
-    <div class="header_box col-8">
+    <div class="header_box">
       <div class="img_cover">
         <img src="./Untitled.png" class="edit-img" alt="lỗi hiển thị">
         <div class="editPhoto bg-white">
@@ -52,14 +73,24 @@
             cá nhân</button>
         </div>
       </div>
-      <nav class="navbar navbar-expand-lg navbar-light header_navbar">
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <nav class="navbar navbar-expand-lg navbar-light header_navbar div_navbar">   
           <div id="app">
-              <ul>
-                navbar
-              </ul>
+              <!-- <div class="blockSeeMore">
+                <ul class="ul_SeeMore">
+                  <li class="li_SeeMore">Thể Thao</li>
+                  <li class="li_SeeMore">Âm nhạc</li>
+                  <li class="li_SeeMore">Phim</li>
+                  <li class="li_SeeMore">Chương trình TV</li>
+                  <li class="li_SeeMore">Ứng dụng và trò chơi</li>
+                </ul>
+              </div> -->
+              <div class="blockSeeMore">
+                
+              </div>
           </div>
-        </div>
+          <div class="menuIcon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         <div class="more">
           <p class="dots"><i class="fa-solid fa-ellipsis"></i></p>
         </div>
@@ -68,8 +99,8 @@
   </header>
 
   <div class="row justify-content-md-center">
-    <div class="box-container col-8">
-      <div class="container_introduce col-5 bg-light ">
+    <div class="box-container ">
+      <div class="container_introduce bg-light ">
         <h4 class="title">Giới Thiệu</h4>
         <button class="edit_introduce">Chỉnh sửa tiểu sử</button>
         <div class="profile"><i class="fa-solid fa-graduation-cap"></i>Đã học tại <span class="text_school">THPT CẦU
@@ -85,7 +116,17 @@
         </div>
         <button class="edit_introduce">Chỉnh sửa chi tiết</button>
         <button class="edit_introduce">Thêm sở thích</button>
+        <div class="img">
+          
+        </div>
         <button class="edit_introduce">Chỉnh sửa phần Đáng chú ý</button>
+        
+        <div class="grid_image">
+          <div class="header_grid">
+            <h4 class="text_header">Ảnh</h4>
+            <button class="seeAllPhotos">Xem tất cả ảnh</button>
+          </div>
+        </div>
       </div>
       <div class="container_news col ">
         <div class="container_news_heading bg-light">
@@ -147,10 +188,10 @@
             </div>
           </div>
           <div class="div_cap">
-            <p class="cap">Gõ cửa trái tim <i class="fa-solid fa-heart"></i> xin em được vào</p>
+            <p class="cap">Gõ cửa trái tim <i class="fa-solid fa-heart"></i></p>
           </div>
           <div class="img_posts">
-            <img src="./dongvietlong.jpg" alt="" class="img_posts_first">
+            <img src="./long3.jpg" alt="" class="img_posts_first">
           </div>
           <div class="footer_posts">
             <div class="icon_posts">
@@ -186,8 +227,23 @@
             </div>
             <div class="comment_friends">
               <div class="box_comment">
-                <p class="user_name">Trung Phong</p>
+                <!-- <div class="getComment"></div> -->
+              </div>
+              <div class="feedback_comment">
+                <p class="like_comment">Thích</p>
+                <p class="feedback">Phản hồi</p>
+              </div>
+            </div>
+          </div>
+          <div class="commentOfFriends">
+            <div class="img_commentOfFriends">
+              <img src="./273430886_3152898434987919_4204426877592786831_n.jpg" alt="" class="avt_listfriend">
+            </div>
+            <div class="comment_friends">
+              <div class="box_comment">
+                <!-- <p class="user_name">Trung Phong</p>
                 <p class="comment">Vào đấy lạc đấy b</p>
+                <div class="getComment"></div> -->
               </div>
               <div class="feedback_comment">
                 <p class="like_comment">Thích</p>
@@ -206,6 +262,10 @@
     </div>
   </div>
 </body>
+<script src="./list-img.js"></script>
+<script src="./grid-img.js"></script>
+<script src="./lib-tab.js"></script>
+<script src="./comments.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
