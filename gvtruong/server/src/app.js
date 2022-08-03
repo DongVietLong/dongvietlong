@@ -19,9 +19,6 @@ if (config.env !== 'test') {
   app.use(morgan.errorHandler);
 }
 
-// set security HTTP headers
-app.use(helmet());
-
 // parse json request body
 app.use(express.json());
 
@@ -56,5 +53,8 @@ app.use(errorConverter);
 
 // handle error
 app.use(errorHandler);
+
+// set security HTTP headers
+app.use(helmet());
 
 module.exports = app;
