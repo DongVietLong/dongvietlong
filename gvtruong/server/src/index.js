@@ -98,8 +98,9 @@ mongoose.connect(config.mongoose.url, config.mongoose.options).then(async (conn)
     }
   })
 
-  app._router.stack.forEach(printRoute.bind(null, []))
-
+  app.get('/', function(req, res) {
+    res.send("Hello world!")
+  })
   // send back a 404 error for any unknown api request
   app.use((req, res, next) => {
     next(new ApiError(httpStatus.NOT_FOUND, 'Not found'));
