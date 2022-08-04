@@ -67,10 +67,9 @@ mongoose.connect(config.mongoose.url, config.mongoose.options).then(async (conn)
   })
 
   // route for fetching all the files from the media bucket
-  app.get('/v1/media/files', auth(), async (req, res) => {
+  app.get('/v1/media/files', async (req, res) => {
     try {
       const files = await gfs.files.find().toArray()
-
       res.json(files)
 
     } catch (err) {
