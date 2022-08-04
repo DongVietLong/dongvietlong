@@ -1,18 +1,7 @@
-body {
-    background-color: #18191a;
-}
-
-.main {
-    margin-bottom: 50px;
-}
-
-.main__nav {
-    background-color: #242526;
-}
-
+/* HEADER ---------------------------------------------------------------------------------------- */
 .header {
     height: 55px;
-    background-color: #242526;
+    background-color: var(--bacground-color);
     border-bottom: 1px solid #b0b3b844;
     position: fixed;
     top: 0;
@@ -23,9 +12,6 @@ body {
 
 .header__logo-and-search {
     min-height: 55px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .header__logo-facebook {
@@ -34,17 +20,18 @@ body {
 }
 
 .header__search {
+    display: flex;
     flex: 1;
     height: 40px;
-    border-radius: 25px;
-    display: flex;
+    padding-right: 20px;
+    border-radius: 18px;
     background-color: #3a3b3c;
     justify-content: space-between;
     align-items: center;
 }
 
 .header__search-icon {
-    color: #b0b3b8;
+    color: var(--primary-color);
     padding: 0 10px 0 15px;
 }
 
@@ -54,27 +41,21 @@ body {
     border: 0;
     flex: 1;
     outline: none;
-    color: #b0b3b8;
+    color: var(--primary-color);
 }
 
 .header__navbar-list {
     height: 55px;
-    list-style: none;   
-    align-items: center;
-    justify-content: space-around; 
+    justify-content: space-evenly;
 }
 
 .header__navbar-list-link {
-    color: #b0b3b8;
+    color: var(--primary-color);
     font-size: 22px;
-    padding: 0 10px;
 }
 
 .header__navbar-user {
     height: 100%;
-    align-items: center;
-    justify-content: end; 
-
 }
 
 .header__navbar-user-link {
@@ -104,9 +85,9 @@ body {
     border-radius: 50%;
 }
 
+/* COVER IMG ---------------------------------------------------------------------------------------- */
 .cover-image {
     margin-top: 55px;
-    position: relative;
 }
 
 .cover-image-warp {
@@ -116,45 +97,33 @@ body {
     margin: 0 auto;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    position: relative;
 }
 
 .cover-image-link {
-    max-width: 940px;
-    margin: -100% auto 0;
+    position: absolute;
+    bottom: -30%;
+    width: 100%;
+    object-fit: contain;
 }
 
 .cover-image__btn-edit {
     position: absolute;
-    bottom: 5%;
-    right: 17%;
-    padding: 0 10px;
+    bottom: 0; right: 0;
+    margin: 0 30px 15px 0;
     min-height: 35px;
     min-width: 100px;
     border: none;
     border-radius: 5px;
     font-weight: 500;
-    outline: none;
 }
 
 .btn-edit-icon {
-    padding-right: 3px;
+    transform: translateY(-5%);
 }
 
-
-
-.avatar-and-infomation-and-edit {
-    max-width: 940px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.container-move-up {
-    position: relative;
-    top: -30px;
-}
-
+/* ẢNH ĐẠI DIỆN ---------------------------------------------------------------------------------------- */
 .avatar {
-    display: flex;
     position: relative;
 
 }
@@ -163,7 +132,7 @@ body {
     width: 175px;
     height: 175px;
     border-radius: 50%;
-    border: 4px solid #242526;
+    border: 4px solid var(--bacground-color);
     margin: auto;
 }
 
@@ -172,8 +141,7 @@ body {
     height: 35px;
     border-radius: 50px;
     position: absolute;
-    bottom: 5%;
-    right: 21%;
+    bottom: 7%; right: 7%;
     background-color: #3a3b3c;
 }
 
@@ -184,7 +152,7 @@ body {
 }
 
 .infomation {
-    height: 100%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
@@ -193,62 +161,65 @@ body {
     color: #e4e6eb;
     font-size: 33px;
     font-weight: 650;
+    text-align: center;
 }
 
 .infomation__list-friend {
-    color: #b0b3b8;
+    color: var(--primary-color);
     font-size: 16px;
     font-weight: 500;
 }
 
 
-.infomation__des-friend {
-    margin-top: 5px;
-    position: relative;
+.infomation__des-friend-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .thumbnail-friend {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    border: 2px solid #242526;
-    position: absolute;
+    border: 2px solid var(--bacground-color);
+    position: relative;
 }
 
-.friend1 {
 
+.friend1 {
+    left: 25px;
+    z-index: 4;
 }
 
 .friend2 {
-    margin-left: 20px;
+    left: 10px;
+    z-index: 3;
 }
 
 .friend3 {
-    margin-left: 40px;
+    z-index: 2;
 }
 
 .friend4 {
-    margin-left: 60px;
+    right: 10px;
 }
-
-
 
 .infomation__des-friend-add {
-    color: #b0b3b8;
+    color: var(--primary-color);
     font-size: 18px;
-    display: block;
-    position: absolute;
-    top: 9px;
-    left: 11px;
-    margin-left: 60px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    position: relative;
+    right: 43px;
 }
-
-
 
 .edit-information {
     height: 100%;
-    align-items: flex-end;
-    padding-bottom: 12px;
+    padding: 20px 0 12px;
 }
 
 .edit-information__add-new {
@@ -266,9 +237,6 @@ body {
 .edit-information__add-new:hover {
     background-color: #3082ee;
 }
-
-
-
 
 .edit-information__plus-wrap {
     width: 20px;
@@ -299,27 +267,29 @@ body {
 }
 
 .edit-information__btn:hover {
-    background-color: #474747;
+    background-color: var(--bacground-color-btn);
 }
 
-.navbar-activate {
+/* NAV BAR CHÍNH ---------------------------------------------------------------------------------------- */
+
+
+.navbar-activate .container-fix {
     border-top: 1px solid #b0b3b844;
     min-height: 60px;
-    max-width: 940px;
     margin: 0 auto;
-    padding: 0 30px;
     align-items: center;
     justify-content: start;
 }
 
+
 .navbar-activate-icon {
     padding: 18px 15px;
-    color: #b0b3b8;
+    color: var(--primary-color);
     height: 100%;
 }
 
 .navbar-activate-icon:hover {
-    color: #b0b3b8;
+    color: var(--primary-color);
     background-color: #3a3b3c;
     border-radius: 8px;
 }
@@ -342,7 +312,7 @@ body {
 }
 
 #navbar__see-more-list {
-    background-color: #242526;
+    background-color: var(--bacground-color);
     min-width: 340px;
     border-radius: 8px;
     border: 1px solid #b0b3b81e;
@@ -360,80 +330,533 @@ body {
     border-radius: 5px;
 }
 
-
-.active {
-    border-bottom: 3px solid #2374e1;
-}
-
-.active:hover {
-    background-color: unset;
-    border-radius: unset;
+.dropdown-toggle::after {
+    transform: translateY(3px);
 }
 
 
+/* Bài viết ---------------------------------------------------------------------------------------- */
 
-.head {
-    padding-top: 20px;
-    display: flex;
+.post.set-item .container-fix {
+    background-color: #18191a;
 }
 
-.head-name {
+.information-personal-wrap {
+    background-color: var(--bacground-color);
+    padding: 0 15px 7px;
+    border-radius: 10px;
+}
+
+.information-personal-title {
     color: #e4e6eb;
     font-size: 22px;
     font-weight: 650;
-    flex: 1;
     display: block;
+    padding-top: 15px;
 }
 
-.head__add-img-video {
-    background-color: rgba(0, 0, 0, 0);
-    color: #2374e1;
-    border: none;
-    border-radius: 5px;
-    font-weight: 500;
-}
-
-.head__head-setting {
-    min-width: 50px;
-    height: 35px;
-    margin-left: 20px;
-    color: #e4e6eb;
-    background-color: #3a3b3c;
-    border: none;
-    border-radius: 5px;
-    outline: none !important;
-}
-
-.head__head-setting:hover {
-    background-color: #474747;
-
-}
-
-.head__des {
-    display: flex;
+.information-personal-list {
+    color: var(--text-color-lighter);
     list-style: none;
     padding: 0;
-    margin-top: 30px;
 }
 
-.head__des-item {
+.personal-item {
+    margin: 18px 0;
+}
+
+.personal-text-small {
+    font-size: 15px;
+    text-align: center;
+}
+
+.personal-item-btn {
+    background-color: var(--bacground-color-btn);
+    text-align: center;
+    padding: 7px 0;
+    border-radius: 7px;
+}
+
+.personal-item-btn:hover {
+    background-color: #646363;
+}
+
+.personal-basic {
+    display: flex;
+    align-items: center;
+}
+
+.personal-item-icon {
+    margin-right: 10px;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.information-personal-imgs {
+    margin-top: 20px;
+    background-color: var(--bacground-color);
+    padding: 0 15px 14px;
+    border-radius: 10px;
+}
+
+.information-personal-imgs > section {
+    padding: 20px 0 15px;
+}
+
+
+.personal-imgs-view-all {
+    font-size: 18px;
+    color: #2374e1;
+}
+
+
+.information-personal-img {
+    overflow: hidden;
+    margin-bottom: 6px;
+    border-radius: 8px;
+    height: 110px;
+}
+
+.information-personal-img img {
+    max-width: 250%;
+    max-height: 250%;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+}
+
+.information-personal-imgs .row-fix {
+    margin: 0 -3px;
+}
+
+.information-personal-imgs .col-fix {
+    padding: 0 3px;
+}
+
+
+.information-personal-friend section {
+    padding-bottom: 0;
+}
+
+.personal-friend-desc {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+
+.personal-friend-name {
+    font-size: 14px;
+    display: block;
+    color: var(--text-color-lighter);
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.personal-friend-name:hover {
+    color: var(--text-color-lighter);
+}
+
+.posts-type-set {
+    padding: 10px  15px 10px;
+}
+
+.posts-type-set img {
+    margin: 0 10px 0 0;
+}
+
+.posts-type-set-search.friend-search-container {
+    flex: 1;
+    padding-left: 15px;
+    font-size: 18px;
+    height: 40px;
+    color: var(--text-color-lighter);
+}
+
+.posts-type-list {
+    padding: 15px 15px 0;
+    margin: 10px 0 0;
+    border-top: 1px solid #b0b3b844;
+}
+
+.posts-type-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.posts-type-item:hover {
+    background-color: #535353be
+}
+
+
+.posts-type-icon--image-video,
+.posts-type-icon--flag,
+.posts-type-icon--camera {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.posts-type-icon--camera {
+    color: #f3425f;
+}
+
+.posts-type-icon--image-video {
+    color: #45bd62;
+}
+
+.posts-type-icon--flag {
+    color: #549ec9;
+}
+
+.posts-type-item span {
+    color: var(--primary-color);
+}
+
+.post-manage {
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.post-manage.information-personal-wrap {
+    padding-bottom: 0;
+}
+
+
+
+.post-manage-head-tittle {
+    flex: 1;
+    padding-top: 0;
+}
+
+.post-manage-head-btn {
+    background-color: var(--bacground-color-btn);
+    border: none;
+    padding: 8px 10px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.post-manage-head-btn span {
+    color: var(--text-color-lighter);
+}
+
+.post-head-icon--setting,
+.post-head-icon--filter {
+    color: var(--text-color-lighter);
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.post-manage-list {
+    margin: 10px 0 0 0;
+    padding: 0;
+    border-top: 1px solid #b0b3b844;
+}
+
+.post-manage-item {
+    color: var(--primary-color);
+    list-style: none;
+    padding: 12px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.post-manage-item:hover {
+    cursor: pointer;
+}
+
+
+.post-item-icon--menu {
+    font-size: 18px;
+    margin-right: 10px;
+}
+.post-item-icon--grid {
+    margin-right: 10px;
+
+}
+
+.posts-desc {
+    
+}
+
+.posts-desc-name {
+    display: block;
+    font-weight: 600;
+    color: var(--text-color-lighter);
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.posts-desc-date {
+    font-size: 14px;
+    color: var(--primary-color);
+
+}
+
+.post {
+    margin-top: 20px;
+    padding: 10px 15px 10px;
+}
+
+.header__avatar-desc-wrap .header__avatar {
+    margin-left: 0;
+}
+
+.post-img {
+
+}
+
+.post-img-link {
+    width: 100%;
+    object-fit: contain;
+}
+
+.post-img-desc1 {
+    color: var(--primary-color);
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.post-img-desc2 {
+    color: var(--text-color-lighter);
+    font-size: 18px;
+    line-height: 22px;
+
+}
+
+.post-action {
+    border: none;
+    margin-top: 0;
+    padding: 10px 10px 0;
+    width: 100%;
+}
+
+.post-action .posts-type-item {
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+    margin-bottom: 5px;
+}
+
+
+
+.posts-type-icon--like,
+.posts-type-icon--cmt,
+.posts-type-icon--share {
+    font-size: 22px;
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.post-img-comment {
+    padding-top: 10px;
+    border-top: 1px solid #b0b3b844;
+}
+
+.post-comment i {
+    color: #b0b3b8c0;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+
+
+
+/* GIỚI THIỆU ---------------------------------------------------------------------------------------- */
+.introduce-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.introduce-list-des {
+    border-right: 1px solid #b0b3b844;
+    padding-bottom: 20px;
+    height: 100%;
+}
+
+.introduce__head-name {
     color: #e4e6eb;
-    padding: 0 15px 20px;
-    margin-right: 15px;
+    font-size: 22px;
+    font-weight: 650;
+    display: block;
+    padding-top: 20px;
 }
 
 
+.introduce__list {
+    color: var(--primary-color);
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.introduce__list-item {
+    background-color: transparent;
+    margin: 10px 0px 10px 0;
+    padding-left: 15px;
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.introduce__list-item:hover {
+    cursor: pointer;
+}
+
+
+.introduce-detail-list {
+    list-style: none;
+    padding-left: 15px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.introduce-detail-item {
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0;
+    font-size: 16px;
+    color: var(--text-color-lighter);
+}
+
+.introduce-detail-content {
+    flex: 1;
+}
+
+
+.introduce-detail-icon {
+    color: var(--primary-color);
+    font-size: 22px;
+    width: 25px;
+    margin-right: 20px;
+}
+
+.introduce-detail--extra {
+    font-size: 14.5px;
+    color: #b0b3b8;
+}
+
+.introduce-detail--modifed {
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25px;
+    color: #b0b3b8;
+    font-size: 17px;
+}
+
+.introduce-detail--modifed i:hover {
+    color: #206dd3;
+}
+
+.introduce-detail--modifed .friend-name-edit {
+    background-color: var(--bacground-color-btn);
+    margin-left: 20px;
+}
+
+
+.introduce-detail--modifed .friend-name-edit:hover {
+    background-color: var(--color-btn-hover);
+}
+
+
+/* BẠN BÈ ---------------------------------------------------------------------------------------- */
+.friend {
+
+}
+
+.friend-search-container {
+    height: 40px;
+    border-radius: 18px;
+    background-color: #3a3b3c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-color);
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+.friend-search-icon {
+    color: var(--primary-color);
+    margin: 0 10px;
+}
+
+.friend-search {
+    background-color: transparent;
+    outline: none; border: none;
+    color: var(--primary-color);
+   flex: 1;
+}
+
+
+.friend-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid #2c2c2c;
+    margin-bottom: 10px;
+}
+
+.friend-img {
+    width: 85px;
+    height: 85px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.friend-img-link {
+    width: 100%;
+}
+
+.friend-name {
+    color: var(--text-color);
+    flex: 1;
+    padding-left: 20px;
+}
+
+.friend-name-edit {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: none;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+}
+
+.friend-info .friend-name-edit {
+    margin-right: 10px;
+}
+
+.friend-name-edit i:hover,
+.friend-name-edit:hover {
+    background-color: var(--color-btn-hover);
+    color: var(--text-color);
+}
+
+
+/* IMG ---------------------------------------------------------------------------------------- */
 .img__and-edit {
     display: block;
     max-height: 170px;
     border-radius: 10px;
     overflow: hidden;
-    margin: 5px 0;
+    margin-bottom: 15px;
     position: relative;
 }
 
 .img__link {
-    width: 100%;
+    object-fit: cover;
 }
 
 .img__and-edit-icon {
@@ -452,15 +875,17 @@ body {
 
 }
 
-
 .set-item {
-    background-color: #242526;
-    max-width: 940px;
+    background-color: #18191a;
     margin: 20px auto 0;
-    padding: 0 30px 20px;
     border-radius: 10px;
 }
 
+.set-item .container-fix {
+    background-color: var(--bacground-color);
+    border-radius: 10px;
+
+}
 
 
 

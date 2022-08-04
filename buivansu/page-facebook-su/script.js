@@ -49,3 +49,26 @@ musicHeaderDes.forEach((item) => {
         item.classList.add('active');
     });
 });
+
+
+let getElementIntroduce = document.querySelectorAll('.introduce__list-item');
+
+getElementIntroduce.forEach((item) => {
+    item.addEventListener('click', () => {
+        getElementIntroduce.forEach((item2) => {
+            item2.classList.remove('active-item');
+        });
+        item.classList.add('active-item');
+    });
+});
+
+let getPostManageItem = document.querySelectorAll('.post-manage-item');
+
+getPostManageItem.forEach((item) => {
+    item.addEventListener('click', () => {
+        getPostManageItem.forEach((item2) => {
+            item2.classList.remove('active');
+        });
+        item.classList.add('active');
+    });
+});
