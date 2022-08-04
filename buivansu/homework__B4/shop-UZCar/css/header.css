@@ -24,28 +24,39 @@ header {
 
 .logo {
     font-weight: 700;
+    position: relative;
 }
 
-.logo-car {
-    color: var(--text-color);
-    font-size: 27px;
-    text-decoration: underline;
-}
 
-/* .logo-circle {
-    top: 0;
-    right: 0;
+.logo__circle {
+    display: block;
+    position: absolute;
+    top: 9px;
+    right: -62px;
     border-radius: 50%;
     background-color: var(--primary-color);
     width: 27px;
     height: 27px;
-} */
+}
+
+.logo__text {
+
+}
 
 .logo-uz {
     color: var(--text-color);
     font-size: 36px;
+    
 }
 
+.logo-car {
+    position: absolute;
+    top: 9px;
+    right: -46px;
+    color: var(--text-color);
+    font-size: 27px;
+    text-decoration: underline;
+}
 
 
 
