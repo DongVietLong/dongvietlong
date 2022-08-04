@@ -2,6 +2,10 @@ var imagesLink = [
   "https://duhocvietglobal.com/wp-content/uploads/2018/12/dat-nuoc-va-con-nguoi-anh-quoc.jpg",
   "https://www.tugo.com.vn/wp-content/uploads/1-3339-1415416821.jpg",
   "https://images7.content-hci.com/commimg/myhotcourses/blog/post/myhc_94265_255px.jpg",
+  "https://images7.content-hci.com/commimg/myhotcourses/blog/post/myhc_94265_255px.jpg",
+  "https://images7.content-hci.com/commimg/myhotcourses/blog/post/myhc_94265_255px.jpg",
+  "https://images7.content-hci.com/commimg/myhotcourses/blog/post/myhc_94265_255px.jpg",
+
 ];
 
 var app = document.getElementById("app");
@@ -48,7 +52,7 @@ carouselContainer.appendChild(carouselIndicators);
 
 var timerId = setInterval(() => {
   nextSlide();
-}, 5000);
+}, 2000);
 
 function nextSlide() {
   cacheID++;

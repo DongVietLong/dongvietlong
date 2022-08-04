@@ -40,50 +40,20 @@
 //   }
 // })();
 
-class NumberError extends Error {
-  constructor(value) {
-    super(`"${value}" is not a valid number`);
-    this.name = "InvalidNumber";
-  }
-}
-//
-// (function () {
-//   function getUserById(id) {
-//     if (typeof id !== "number" || id <= 0) {
-//       throw new Error("Invalid id argument");
-//     }
-//
-//     return new Promise((resolve, reject) => {
-//       resolve({
-//         id: id,
-//         username: "admin",
-//       });
-//     });
+// class NumberError extends Error {
+//   constructor(value) {
+//     super(`"${value}" is not a valid number`);
+//     this.name = "InvalidNumber";
 //   }
+// }
 //
-//   getUserById("a")
-//     .then((user) => console.log(user.username))
-//     .catch((err) => console.log(err));
-//
-//   try {
-//     getUserById("a")
-//       .then((user) => console.log(user.username))
-//       .catch((err) => console.log(`Caught by .catch ${error}`));
-//   } catch (error) {
-//     console.log(`Caught by try/catch ${error}`);
-//   }
-// })();
-
 (function () {
-  let authorized = false;
-
   function getUserById(id) {
-    return new Promise((resolve, reject) => {
-      if (!authorized) {
-        // throw new Error("Unauthorized access to the user data");
-        reject("Unauthorized access to the user data");
-      }
+    if (typeof id !== "number" || id <= 0) {
+      throw new Error("Invalid id argument");
+    }
 
+    return new Promise((resolve, reject) => {
       resolve({
         id: id,
         username: "admin",
@@ -91,11 +61,43 @@ class NumberError extends Error {
     });
   }
 
+  getUserById("a")
+    .then((user) => console.log(user.username))
+    .catch((err) => console.log(err));
+
   try {
-    getUserById(10)
+    getUserById("a")
       .then((user) => console.log(user.username))
-      // .catch((err) => console.log(`Caught by .catch ${err}`));
+      .catch((err) => console.log(`Caught by .catch ${error}`));
   } catch (error) {
     console.log(`Caught by try/catch ${error}`);
   }
 })();
+
+
+
+// (function () {
+//   let authorized = false;
+
+//   function getUserById(id) {
+//     return new Promise((resolve, reject) => {
+//       if (!authorized) {
+//         // throw new Error("Unauthorized access to the user data");
+//         reject("Unauthorized access to the user data");
+//       }
+
+//       resolve({
+//         id: id,
+//         username: "admin",
+//       });
+//     });
+//   }
+
+//   try {
+//     getUserById(10)
+//       .then((user) => console.log(user.username))
+//       // .catch((err) => console.log(`Caught by .catch ${err}`));
+//   } catch (error) {
+//     console.log(`Caught by try/catch ${error}`);
+//   }
+// })();
