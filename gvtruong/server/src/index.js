@@ -13,6 +13,7 @@ const httpStatus = require("http-status");
 const crypto = require('crypto')
 const {updateUserById} = require("./services/user.service");
 const {backendURL} = require("./config/config");
+const {updatePostById} = require("./services/post.service");
 
 let server;
 mongoose.connect(config.mongoose.url, config.mongoose.options).then(async (conn) => {
@@ -55,6 +56,13 @@ mongoose.connect(config.mongoose.url, config.mongoose.options).then(async (conn)
         [req.query.type]: `${backendURL}/v1/media/${req.file.filename}`
       })
     }
+
+    else if(req.query.type === 'post' && req.query.post_id) {
+      await updatePostById(req.query.post_id, {
+        image: `${backendURL}/v1/media/${req.file.filename}`
+      })
+    }
+
     res.json(req.file)
   })
 

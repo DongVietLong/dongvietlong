@@ -43,7 +43,8 @@ const sendVerificationEmail = catchAsync(async (req, res) => {
 });
 
 const whoami = catchAsync(async (req, res) => {
- const user = await userService.getUserByEmail(req.user.email);
+ // const user = await userService.getUserByEmail(req.user.email);
+  const user = await userService.getUserByEmail("levi.itglobal@gmail.com");
   res.send(user);
 })
 
