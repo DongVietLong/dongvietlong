@@ -6,10 +6,10 @@
 //     if (typeof y !== "number") {
 //       throw "The second argument must be a number";
 //     }
-//
+
 //     return x + y;
 //   }
-//
+
 //   try {
 //     const result = add("a", 10);
 //     console.log(result);
