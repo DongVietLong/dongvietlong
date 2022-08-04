@@ -1,0 +1,61 @@
+footer {
+    margin-top: 100px;
+    /* width: 100%; */
+    background-color: var(--text-color);
+}
+
+.footer__container {
+    padding: 40px 0px;
+}
+
+
+.logo {
+}
+
+.footer-logo-hotline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-car.avtive,
+.logo-uz.avtive {
+    color: var(--white-color);
+}
+
+
+.footer-logo-hotline p {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--white-color);
+    padding-top: 15px;
+    text-align: center;
+}
+
+.footer-information {
+    color: var(--white-color);
+    list-style: none;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 200%;
+    text-align: center;
+
+}
+
+.footer-information__head {
+    font-weight: 700;
+    font-size: 24px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.information-social {
+    display: flex;
+    justify-content: center;
+}
+
+.information-social {
+    color: var(--white-color);
+    margin: 0 20px;
+    font-size: 30px;
+}

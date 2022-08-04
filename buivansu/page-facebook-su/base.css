@@ -1,0 +1,143 @@
+html,
+body {
+    background-color: #18191a;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main {
+    margin-bottom: 50px;
+}
+
+.main__nav {
+    background-color: #242526;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.cover-image__btn-edit:hover,
+.edit-information__add-new:hover,
+.edit-information__plus-wrap:hover,
+.avatar__btn-edit:hover,
+.head__add-img-video:hover,
+.head__head-setting:hover,
+.navbar-activate-icon:hover,
+.head__des-item,
+.img__and-edit-icon:hover {
+    cursor: pointer;
+}
+
+.img__list .row-fix {
+    margin: 0 -7.5px;
+}
+
+.img__list .col-fix {
+    padding: 0 7.5px;
+}
+
+:root {
+    --primary-color: #b0b3b8;
+    --text-color: #e4e6eb;
+    --text-color-lighter: #e1e2e4;
+    --bacground-color: #242526;
+    --bacground-color-btn: #3a3b3c;
+    --color-btn-hover: #474747;
+}
+
+.cover-image__btn-edit,
+.header__logo-and-search,
+.header__navbar-list,
+.header__navbar-user,
+.avatar-and-infomation-and-edit .container-fix,
+.header .container-fix,
+.edit-information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.friend .row-fix {
+    margin: 0 -5px;
+    padding: 0 15px;
+}
+
+.friend .col-fix {
+    padding: 0 5px;
+}
+
+
+.head {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head-name {
+    color: #e4e6eb;
+    font-size: 22px;
+    font-weight: 650;
+    flex: 1;
+    display: block;
+}
+
+.head__add {
+    background-color: rgba(0, 0, 0, 0);
+    color: #206dd3;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 0 15px;
+}
+
+.head-setting {
+    min-width: 50px;
+    height: 35px;
+    margin-left: 20px;
+    color: #e4e6eb;
+    background-color: #3a3b3c;
+    border: none;
+    border-radius: 5px;
+    outline: none !important;
+}
+
+.head-setting:hover {
+    background-color: #474747;
+
+}
+
+.head__des {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.head__des-item {
+    color: #e4e6eb;
+    padding: 0 15px 20px;
+    margin-right: 15px;
+}
+
+.active-text {
+    color: #206dd3 !important;
+}
+
+.active-item {
+    color: #206dd3 !important;
+    background-color: #2375e125 !important;
+}
+
+.active {
+    border-bottom: 3px solid #2374e1;
+}
+
+.active:hover {
+    background-color: unset;
+    border-radius: unset;
+}

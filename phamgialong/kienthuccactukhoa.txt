@@ -1,0 +1,1 @@
+tên biến và cách đặt tên biến trong js

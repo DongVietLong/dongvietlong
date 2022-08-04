@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+}
+div {
+    background-color: brown;
+    width: 300px;
+    display: flex;
+}
+img {
+    height: 300px;
+    width: 300px;}

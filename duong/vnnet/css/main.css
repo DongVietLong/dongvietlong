@@ -1,0 +1,259 @@
+        /* Reset css */
+        
+        body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        /* header */
+        
+        .header-border {
+            border-bottom: 1px solid #e2e2e2;
+        }
+        
+        .header {
+            padding: 5px 0px;
+        }
+        
+        .header__top-logo {
+            margin-right: 35px;
+        }
+        
+        .header__top-logo img {
+            width: 120px;
+        }
+        
+        .header__top-hastag a {
+            text-decoration: none;
+            background-color: #f0f0f0;
+            border-radius: 50px;
+            color: #555;
+            display: block;
+            font-size: 13px;
+            padding: 5px 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        
+        .header__top-hastag p {
+            margin: 0px;
+        }
+        
+        .header__top-list>ul {
+            list-style-type: none;
+        }
+        
+        .header__top-list li {
+            border-right: 1px solid #ababab;
+        }
+        
+        .header__top-login {
+            border-right: none;
+        }
+        
+        .header__top-list>ul a {
+            text-decoration: none;
+            margin: 0px 10px;
+            font-size: 13px;
+            color: #2a2a2a;
+        }
+        
+        .header__top-premium img {
+            width: 89px;
+        }
+        
+        .header__top-login img {
+            width: 22px;
+        }
+        
+        .header__top-search img {
+            width: 20px;
+        }
+        /* nav */
+        
+        .nav {
+            background: #fff;
+            border-bottom: 1px solid #e2e2e2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+            padding: 0px;
+            height: auto;
+        }
+        /*==menu==*/
+        
+        #menu ul {
+            list-style-type: none;
+            text-align: center;
+            margin: 0px;
+        }
+        
+        #menu li {
+            color: #f1f1f1;
+            display: inline-block;
+        }
+        
+        #menu a {
+            text-decoration: none;
+            color: #2a2a2a;
+            font-weight: 600;
+            display: inline-block;
+            padding: 13px 0px;
+            margin-right: 10px;
+        }
+        
+        #menu a:hover {
+            color: #2d67ad;
+            border-bottom: 1px solid #2d67ad;
+        }
+        /*==Dropdown Menu==*/
+        
+        .sub-menu {
+            display: none;
+            position: absolute;
+            padding-left: 5px;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        }
+        
+        #menu li {
+            position: relative;
+        }
+        
+        #menu li:hover .sub-menu {
+            display: block;
+            background-color: #fff;
+        }
+        
+        #menu li:hover .sub-menu li {
+            display: block;
+        }
+        
+        #menu li:hover .sub-menu li a {
+            background-color: #2d67ad;
+            display: block;
+            color: #fff;
+            width: 200px;
+        }
+        
+        .sub-menu li {
+            margin-left: 0 !important;
+        }
+        /*==Menu cấp 3==*/
+        
+        .sub-menu>ul {
+            display: none !important;
+        }
+        /* content */
+        
+        .content {
+            max-width: 1140px;
+            margin: 0 auto;
+            margin-top: 110px;
+        }
+        
+        .content__heading {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #e2e2e2;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        
+        .content__heading-title {
+            color: #2d67ad;
+            font-size: 32px;
+            line-height: 30px;
+            font-weight: 600;
+        }
+        
+        .content__heading-search img {
+            width: 20px;
+        }
+        
+        .search {
+            position: relative;
+            height: 100%;
+        }
+        
+        .search img {
+            position: absolute;
+            top: 50%;
+            right: 6%;
+            transform: translateY(-50%);
+        }
+        
+        .search>input {
+            border-radius: 30px;
+            color: #ababab;
+            font-size: 13px;
+            height: 100%;
+            outline: none;
+            padding-left: 10px;
+            padding-right: 33px;
+            min-width: 300px;
+            font-style: italic;
+        }
+        /* artice */
+        
+        .artice {}
+        
+        .artice__outstanding {
+            display: flex;
+        }
+        
+        .artice__outstanding-title {
+            max-width: 500px;
+            overflow: hidden;
+            flex: 2;
+            margin-right: 20px;
+        }
+        
+        .artice__outstanding-desc {
+            max-width: 240px;
+            flex: 1;
+        }
+        
+        .artice__outstanding-title a {
+            text-decoration: none;
+            color: #2a2a2a;
+            font-size: 24px;
+            line-height: 32px;
+        }
+        
+        .artice__outstanding-title a>p {
+            font-weight: 600px;
+        }
+        
+        .artice__outstanding-title img,
+        .artice__outstanding-desc img {
+            width: 100%;
+        }
+        
+        .artice__outstanding-desc a {
+            text-decoration: none;
+            color: #2a2a2a;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        
+        .artice__outstanding-item img,
+        .artice__outstanding-title img {
+            margin-bottom: 20px;
+        }
+        /* //post */
+        
+        .card {
+            max-width: 240px;
+            border: none !important;
+        }
+        
+        .card img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .card:not(:last-child) {
+            margin-right: 20px;
+        }

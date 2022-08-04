@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tú Mạnh Nguyễn</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav-container">
+            <div class="d-flex justify-content-between pl-4 pr-4 pt-3 pb-3">
+                <div class="d-flex">
+                    <a class="d-flex m-0 p-2" href="#">
+                        <img src="https://i.rada.vn/data/image/2020/08/21/Facebook-2020-200.png" width="40" height="40"
+                            class="align-top" alt="logo facebook">
+                    </a>
+                    <div class="search-box d-flex">
+                        <div class="glyphicon-search-box d-flex center">
+                            <em class="glyphicon glyphicon-search"></em>
+                        </div>
+                        <input class="form-control mr-sm-2 bg-light search border-0" type="search"
+                            placeholder="Search Facebook" aria-label="Search">
+                    </div>
+                    <div id="menu" class="center" onclick="openMenu()">
+                        <em class="black fa-solid fa-bars" style="font-size:19px"></em>
+                    </div>
+                    <div id="menu-mobile" class="pl-5 pr-3 m-0 pt-0" >
+                        <div class="holder d-flex w-100 pt-3 pb-3 pl-2 mt-3">
+                            <img src="./Photo/avatar.jpg" class="menu-photo">
+                            <p class="d-flex center pl-3 m-0">Tú Mạnh Nguyễn</p>
+                        </div>
+                        <div class="holder d-flex w-100 pt-3 pb-3 pl-2">
+                            <div class="icon-holder"><i class="menu-icon fa-solid fa-user-group"></i></div>
+                            <p class="d-flex center pl-3 pr-3 m-0">Friends</p>
+                        </div>
+                        <div class="holder d-flex w-100 pt-3 pb-3 pl-2">
+                            <div class="icon-holder"><i class="menu-icon fa-solid fa-clock"></i></div>
+                            <p class="d-flex center pl-3 pr-3 m-0">Memories</p>
+                        </div>
+                        <div class="holder d-flex w-100 pt-3 pb-3 pl-2">
+                            <div class="icon-holder"><i class="menu-icon fa-solid fa-people-group"></i></div>
+                            <p class="d-flex center pl-3 pr-3 m-0">Groups</p>
+                        </div>
+                        <div class="holder d-flex w-100 pt-3 pb-3 pl-2">
+                            <div class="icon-holder"><i class="menu-icon fa-solid fa-shop"></i></div>
+                            <p class="d-flex center pl-3 pr-3 m-0">Marketplace</p>
+                        </div>
+                        <div class="holder d-flex w-100 pt-3 pb-3 pl-2">
+                            <div class="icon-holder"><i class="menu-icon fa-solid fa-tv"></i></div>
+                            <p class="d-flex center pl-3 pr-3 m-0">Watch</p>
+                        </div>
+                        <div class="holder d-flex w-100 pt-3 pb-3 pl-2">
+                            <div class="icon-holder"><i class="menu-icon fa-solid fa-angle-down ml-2"></i></div>
+                            <p class="d-flex center pl-3 pr-3 m-0">See more</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="category d-flex center justify-content-center">
+                    <ul class="d-flex center m-0 center-nav">
+                        <div class="background">
+                            <li class="item-nav center">
+                                <a class="" href="#">
+                                    <em class="black fa-solid fa-home"></em>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="background">
+                            <li class="item-nav center">
+                                <a class="" href="#">
+                                    <em class="black fa-solid fa-tv"></em>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="background">
+                            <li class="item-nav center">
+                                <a class="" href="#">
+                                    <em class="black fa-solid fa-store"></em>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="background">
+                            <li class="item-nav center">
+                                <a class="" href="#">
+                                    <em class="black fa-solid fa-users-line"></em>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="background">
+                            <li class="item-nav center">
+                                <a class="" href="#">
+                                    <em class="black fa-solid fa-gamepad"></em>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="more d-flex center">
+                    <div class="center icon-avatar ">
+                        <img src="./Photo/avatar.jpg" alt="small avatar">
+                        <div class="fb-name" style="font-size:13px">Tú</div>
+                    </div>
+                    <div class="icon-more d-flex center">
+                        <div class="padding">
+                            <div class="border-icon d-flex">
+                                <em class="glyphicon glyphicon-th"></em>
+                            </div>
+                        </div>
+                        <div class="padding">
+                            <div class="border-icon d-flex">
+                                <i class="fa-brands fa-facebook-messenger"></i>
+                            </div>
+                        </div>
+                        <div class="padding">
+                            <div class="border-icon d-flex">
+                                <em class="fas fa-bell"></em>
+                            </div>
+                        </div>
+                        <div class="padding">
+                            <div class="border-icon d-flex">
+                                <em class="fa fa-caret-down"></em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fb-header">
+            <div class="photo-container d-flex center">
+                <div class="cover">
+                    <img class="cover-photo" src="./Photo/cover.jpg" alt="edit-cover">
+                    <div class="edit-cover d-flex center">
+                        <div class="d-flex center"><em class="fas fa-camera"></em></div>
+                        <p class="m-0 pl-2">Edit cover photo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="profile d-flex center">
+                <div class="avt-and-name center">
+                    <div class="avatar w-20">
+                        <img src="./Photo/avatar.jpg" alt="avatar">
+                        <div class="change-avatar d-flex">
+                            <em class="fas fa-camera"></em>
+                        </div>
+                    </div>
+                    <div class="fb-name pl-4">
+                        <h2>Tú Mạnh Nguyễn</h2>
+                        <p class="friend-number">1.4K Friends</p>
+                        <div class="friends">
+                            <img src="./Photo/friend1.jpeg" alt="friend1">
+                            <img src="./Photo/friend2.jpeg" alt="friend2">
+                            <img src="./Photo/friend3.jpeg" alt="friend3">
+                            <img src="./Photo/friend4.jpeg" alt="friend4">
+                            <img src="./Photo/friend5.jpeg" alt="friend5">
+                        </div>
+                    </div>
+                </div>
+                <div class="add-button d-flex center">
+                    <button type="button" class="add-story button d-flex center" value="">
+                        <em class="fa fa-plus-square-o"></em>
+                        <span class="pl-2"> Add to story</span>
+                    </button>
+                    <button type="button" class="edit-pro5 button d-flex center" value="">
+                        <em class="fas fa-pencil-alt"></em>
+                        <span class="pl-2"> Edit profile</span>
+                    </button>
+                </div>
+            </div>
+            <div class="category-container d-flex center">
+                <div class="category d-flex">
+                    <ul class="category-item d-flex m-0">
+                        <div class="d-flex center">
+                            <li>Posts</li>
+                        </div>
+                        <div class="d-flex center">
+                            <li>About</li>
+                        </div>
+                        <div class="d-flex center">
+                            <li>Friends</li>
+                        </div>
+                        <div class="d-flex center">
+                            <li>Photos</li>
+                        </div>
+                        <div class="d-flex center">
+                            <li>Videos</li>
+                        </div>
+                        <div class="d-flex center">
+                            <li>Check-ins</li>
+                        </div>
+                        <div class="d-flex center toggle-holder">
+                            <li onclick="toggle()">More
+                                <em class="fas fa-caret-down"></em>
+                                <div id="exitToggle" class="exitToggle"></div>
+
+                                <ul id="toggle">
+                                    <li>Sport</li>
+                                    <li>Music</li>
+                                    <li>Movies</li>
+                                    <li>Tv show</li>
+                                </ul>
+                            </li>
+
+                        </div>
+                    </ul>
+                    <div class="setting d-flex center m-0 p-0">
+                        <em class="fas fa-list"></em>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fb-body d-flex center">
+            <div class="fb-content mt-3 d-flex flex-wrap">
+                <div class="left-content col-md-5 col-sm-12 col-12">
+                    <div class="left-content-infor">
+                        <h3>Intro</h3>
+                        <div class="bio">
+                            <p class="m-0">Gia đình là số 1</p>
+                            <p class="m-0">Bạn bè là số 2</p>
+                            <p class="m-0">Tình yêu mới là số 3</p>
+                            <p class="m-0">Số 3 được hội số 1 đồng ý thì cho vào hội 1 luôn</p>
+                        </div>
+                        <button type="button" class="edit-pro5 button w-100 center" value="">
+                            <span class="pl-2"> Edit bio</span>
+                        </button>
+                        <div class="detail-bio d-flex align-items-center pt-4 ">
+                            <em class="fas fa-briefcase"></em>
+                            <p class="m-0 pl-3"> Works at <strong>Ecotek</strong></p>
+                        </div>
+                        <div class="detail-bio d-flex align-items-center pt-4">
+                            <em class="fas fa-briefcase"></em>
+                            <p class="m-0 pl-3"> Worked at <strong>CLB Văn Hóa Ngoại Giao - EACC FTU</strong></p>
+                        </div>
+                        <div class="detail-bio d-flex align-items-center pt-4">
+                            <em class="fas fa-graduation-cap"></em>
+                            <p class="m-0 pl-3"> Went to <strong>THPT Dương Quảng Hàm</strong></p>
+                        </div>
+                        <div class="detail-bio d-flex align-items-center pt-4">
+                            <em class="fas fa-graduation-cap"></em>
+                            <p class="m-0 pl-3">Studied Kế toán - Kiểm toán at <strong>Foreign Trade University FTU - ĐH
+                                    Ngoại
+                                    Thương</strong></p>
+                        </div>
+                        <div class="detail-bio d-flex align-items-center pt-4">
+                            <em class="fas fa-heart"></em>
+                            <p class="m-0 pl-3">Single</p>
+                        </div>
+                        <div class="detail-bio d-flex align-items-center pt-4">
+                            <em class="fas fa-rss"></em>
+                            <p class="m-0 pl-3">Followed by <strong>1 people</strong></p>
+                        </div>
+                        <button type="button" class="edit-pro5 button w-100 center" value="">
+                            <span class="pl-2"> Edit details</span>
+                        </button>
+                        <button type="button" class="edit-pro5 button w-100 center" value="">
+                            <span class="pl-2"> Add Hobbies</span>
+                        </button>
+                    </div>
+                    <div class="left-content-photo mt-5">
+                        <div class="photo d-flex justify-content-between align-items-center pt-4 pb-4">
+                            <h3 class="Photo m-0">Photos</h3>
+                            <p class="seeAll m-0">See all photos</p>
+                        </div>
+                        <div class="album d-flex center flex-wrap">
+                            <div class="album-item col-4">
+                                <img class="photo-size" src="./Photo/Photos/3mountains.jpeg" alt="photo 1">
+                            </div>
+                            <div class="album-item col-4">
+                                <img class="photo-size" src="./Photo/Photos/cat_story.jpeg" alt="photo 2">
+                            </div>
+                            <div class="album-item col-4">
+                                <img class="photo-size" src="./Photo/Photos/christmas_uni.jpeg" alt="photo 3">
+                            </div>
+                            <div class="album-item col-4">
+                                <img class="photo-size" src="./Photo/Photos/ecopark.jpeg" alt="photo 4">
+                            </div>
+                            <div class="album-item col-4">
+                                <img class="photo-size" src="./Photo/Photos/elecdam.jpeg" alt="photo 5">
+                            </div>
+                            <div class="album-item col-4">
+                                <img class="photo-size" src="./Photo/Photos/memories.jpeg" alt="photo 6">
+                            </div>
+                            <div class="album-item col-4">
+                                <img class="photo-size" src="./Photo/Photos/meo2.jpeg" alt="photo 7">
+                            </div>
+                            <div class="album-item col-4">
+                                <img class="photo-size" src="./Photo/Photos/office.jpeg" alt="photo 8">
+                            </div>
+                            <div class="album-item col-4">
+                                <img class="photo-size" src="./Photo/Photos/meow.jpeg" alt="photo 9">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-content col-md-7 col-sm-12 col-12">
+                    <div class="right-content-post">
+                        <div class="post border-bottom">
+                            <div class="status d-flex align-items-center pb-3">
+                                <img class="" src="./Photo/avatar.jpg" alt="avatar icon">
+                                <input class="form-control bg-light search pr-5 ml-3 w-100" style="font-size:13px"
+                                    type="search" placeholder="What's on your mind?" aria-label="Search">
+                            </div>
+                        </div>
+                        <div class="type-of-post d-flex justify-content-around pt-4">
+                            <div class="livestream d-flex center">
+                                <em class="fas fa-video"></em>
+                                <p class="m-0 pl-3">Live video</p>
+                            </div>
+                            <div class="livestream d-flex center">
+                                <em class="fa-solid fa-image"></em>
+                                <p class="m-0 pl-3">Photo/Video</p>
+                            </div>
+                            <div class="livestream d-flex center">
+                                <em class="fa-solid fa-flag"></em>
+                                <p class="m-0 pl-3">Live events</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="setting-view pt-3">
+                        <div class="post-manage d-flex justify-content-between border-bottom align-items-center ">
+                            <h4 class="m-0 pl-4 pb-3">Posts</h4>
+                            <div class="post-filter d-flex center pr-4 pb-3">
+                                <div class="filters d-flex center pr-3 pl-3 mr-3">
+                                    <em class="fas fa-random"></em>
+                                    <p class="m-0 ml-3"><strong>Filters</strong></p>
+                                </div>
+                                <div class="filters d-flex center pr-3 pl-3 ml-3">
+                                    <em class="fas fa-sun"></em>
+                                    <p class="m-0 ml-3"><strong>Manage Posts</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="type-of-view d-flex justify-content-around center p-3">
+                            <div class="list-view d-flex center">
+                                <em class="fas fa-list"></em>
+                                <p class="m-0 pl-3"><strong>List view</strong></p>
+                            </div>
+                            <div class="grid-view d-flex center">
+                                <em class="fas fa-th-large"></em>
+                                <p class="m-0 pl-3"><strong>Grid view</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="share-post">
+                        <div class="time-share d-flex justify-content-between pt-3">
+                            <div class="infor-post d-flex justify-content-flex-start">
+                                <div class="status">
+                                    <img src="./Photo/avatar.jpg" alt="avatar icon">
+                                </div>
+                                <div class="share-title pl-3">
+                                    <p class="m-0"><strong>Tú Mạnh Nguyễn</strong> posted a photo</p>
+                                    <p>June 9 at 1:10 PM
+                                        <em class="fas fa-user-friends"></em>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edit-post">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="status-share d-flex">
+                            <p class="m-0 pb-3 pl-3">Sự chú ý của ta đã va phải ánh mắt của nàng...</p>
+                            <img src="./Photo/cat photo.jpg" alt="cat photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

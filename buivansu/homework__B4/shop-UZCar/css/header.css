@@ -1,0 +1,123 @@
+/* header */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    z-index: 1;
+    background-color: var(--white-color);
+    box-shadow: 0px 4px 30px rgb(0 0 0 / 10%);
+}
+
+/* Section NavBar */
+.navbar {
+    padding: 10px 0;
+    align-items: center;
+    background-color: var(--white);
+    /* background-color: aquamarine; */
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    position: relative;
+}
+
+
+.logo__circle {
+    display: block;
+    position: absolute;
+    top: 9px;
+    right: -62px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    width: 27px;
+    height: 27px;
+}
+
+.logo__text {
+
+}
+
+.logo-uz {
+    color: var(--text-color);
+    font-size: 36px;
+    
+}
+
+.logo-car {
+    position: absolute;
+    top: 9px;
+    right: -46px;
+    color: var(--text-color);
+    font-size: 27px;
+    text-decoration: underline;
+}
+
+
+
+.navbar__logo,
+.navbar_service-list,
+.new-product__action-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.navbar_service-list {
+    justify-content: start;
+}
+
+.navbar_service-list li {
+    margin-right: 30px;
+}
+
+.navbar_service-list a {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.new-product__action-list {
+    justify-content: end;
+}
+
+.new-product__action-number {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.new-product__action-user,
+.new-product__action-heart,
+.new-product__action-cart {
+    width: 48px;
+    height: 48px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.new-product__action-user:hover {
+    filter: brightness(95%);
+}
+
+.new-product__action-heart:hover {
+    filter: brightness(95%);
+}
+
+.new-product__action-cart:hover {
+    filter: brightness(95%);
+}

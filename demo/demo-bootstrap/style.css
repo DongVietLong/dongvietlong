@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+img {
+    margin: 0;
+    padding: 0;
+    width: 120px;
+}
+a.nav-link {
+    font-weight: bolder;
+    
+}
+/* footer */
+.col-md-3 img {
+    margin-top: 50px;
+    
+}
+.footer__bottom-list {
+    margin-top: 20px;
+    font-family: 100;
+    list-style: none;
+    font-size: 13px;
+}
+
+.footer__bottom-item img {
+    width: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+
+}

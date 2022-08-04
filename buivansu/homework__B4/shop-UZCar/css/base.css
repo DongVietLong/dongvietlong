@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 62.5%;
+}
+
+:root {
+    --primary-color: #F5F5F5;
+    --text-color: #000000;
+    --white-color: #fff;
+    --star-color: #FED712;
+    --button-color: #4200FF;
+}
+
+.products__vote-price {
+    margin: 0 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.products__vote-star-icon {
+    color: var(--star-color);
+    font-size: 14px;
+}
+
+.products-price {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--button-color);
+    font-family: 'Roboto';
+}

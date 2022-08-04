@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .casio{
+        background-color: #eaedef;
+        width: 320px;
+        height: 520px;
+        border-radius: 10px;
+        margin: 0  auto;
+    }
+    .result{
+        height: 120px;
+        border: solid 1px black;
+        border-radius: 10px;
+    }
+    .old_result{
+        text-align: right;
+        height: 20px;
+        margin: 0 20px;
+        padding-top: 20px;
+        font-size: 15px;
+    }
+    .output_result{
+        text-align: right;
+        height: 60px;
+        margin: 10px 20px;
+        font-size: 30px;
+    }
+    .keyboard{
+        height: 400px;
+    }
+    .system, .number{
+        width: 50px;
+        height: 50px;
+        margin: 15px;
+        float: left;
+        border-radius: 50%;
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .number{
+        background-color: #eaedef;
+    }
+    .system:active, .number:active{
+        font-size: 13px;
+    }
+    .system:focus, .number:focus{
+        outline: none;
+    }
+    .system{
+        background-color: rgb(0, 251, 255);
+    }
+    .number{
+        background-color: #a2a6a8;
+    }
+</style>
+<body>
+    <div class="casio">
+        <div class="result">
+            <div class="old_result"> 
+                <p class="old_value">
+
+                </p>
+            </div>
+            <div class="output_result">
+                <p class="output_value">
+
+                </p>
+            </div>
+        </div>
+        <div class="keyboard">
+            <button class="system" id="clearALL">C</button>
+            <button class="system" id="clearNumber">CE</button>
+            <button class="system" id="%">%</button>
+            <button class="system" id="/">/</button>
+            <button class="number" id="7">7</button>
+            <button class="number" id="8">8</button>
+            <button class="number" id="9">9</button>
+            <button class="system" id="*">*</button>
+            <button class="number" id="4">4</button>
+            <button class="number" id="5">5</button>
+            <button class="number" id="6">6</button>
+            <button class="system" id="-">-</button>
+            <button class="number" id="1">1</button>
+            <button class="number" id="2">2</button>
+            <button class="number" id="3">3</button>
+            <button class="system" id="+">+</button>
+            <button class="number" id="0"></button>
+            <button class="number" id="0">0</button>
+            <button class="number" id="0"></button>
+            <button class="system" id="=">=</button>
+        </div>
+    </div>
+    <script>
+       function FomatString(so){
+            return Number(so);
+       }
+       function getOldNumber(){
+            return document.querySelector('.old_value').innerHTML;
+       }
+       function outPutOldValue(number){
+            document.querySelector('.old_value').innerHTML = number;
+       }
+       function getResult(){
+            return document.querySelector('.output_value').innerHTML;
+       }
+       function outPutResult(number){
+            document.querySelector('.output_value').innerHTML=number;
+       }
+
+       var getNumber=document.querySelectorAll('.number');
+       getNumber.forEach(a => {
+            a.addEventListener('click',function(){
+                var result=getResult();
+                result += this.id;
+                outPutResult(result);
+            })
+       })
+       var system=document.querySelectorAll('.system');
+       system.forEach(a => {
+            a.addEventListener('click',function(){
+                if(this.id == "clearALL")
+                {
+                    outPutResult("");
+                    outPutOldValue("");
+                }
+                else if(this.id == "clearNumber")
+                {
+                    
+                    let result = getResult();
+                    result.toString();
+                    console.log(typeof(result));
+                    if(result)
+                    {
+                        result = result.substr(0,result.length - 1);
+                        outPutResult(result);
+                    }
+                }else{
+                    let result = getResult();
+                    let getOldresult = getOldNumber();
+                    if(result != ""){
+                        getOldresult +=result;
+                        if(this.id == "=")
+                        {
+                            let FinallyResult = eval(getOldresult);
+                            outPutResult(FinallyResult);
+                            outPutOldValue("")
+                        }else{
+                            getOldresult += this.id;
+                            outPutOldValue(getOldresult)
+                            outPutResult("")
+                        }
+                    }
+                }
+            })
+       })
+    </script>
+</body>
+</html>

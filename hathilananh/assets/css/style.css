@@ -1,0 +1,35 @@
+.logo{
+    background-color: #f5f5f5;
+}
+
+.container{
+    height: 300px;
+}
+
+.navbar-search__input{
+    outline: none;
+}
+
+.navbar-item{
+    list-style: none;
+}
+
+.login-form-wrap{
+    display: none;
+}
+
+.login-check-input:checked ~ .login-form-wrap {
+    display: block;
+}
+
+.login-lable{
+    cursor: pointer;
+}
+
+.favorite-homestay-item,
+.favorite-space-item,
+.about-us-item,
+.contact-us-item{
+    list-style: none;
+}
+

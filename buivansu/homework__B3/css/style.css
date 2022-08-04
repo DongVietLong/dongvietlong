@@ -1,0 +1,142 @@
+
+* {
+    box-sizing: inherit;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    height: auto;
+}
+
+:root {
+    --text-color: #333;
+    --white-color: #fff;
+}
+
+.active {
+    color: #447ec5;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    background-color: var(--white-color);
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 0.05);
+}
+
+
+.header__navbar-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header__navbar-list li {
+    font-size: 1.5rem;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__navbar-list a {
+    font-weight: 500;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.navbar-icon--home {
+    padding-bottom: 3px;
+    padding-right: 5px;
+    font-size: 1.8rem;
+}
+
+.navbar-icon--menu {
+    font-size: 1.8rem;
+    color: #b1b1b1;
+    padding-left: 5px;
+}
+
+/* Container */
+.main__container {
+    margin-top: 50px;
+}
+
+.hot-news {
+    margin-bottom: 10px;
+    overflow: hidden;
+    max-height: 180px;
+}
+
+.hot-news__item {
+
+}
+
+.hot-news__img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+}
+
+.hot-news__content {
+    margin: 0 15px 5px 10px;
+    overflow: hidden;
+}
+
+.hot-news__content a {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.hot-news__content h2 {
+    margin-top: 3px;
+    font-size: 2rem;
+    line-height: 2.3rem;
+
+}
+
+.hot-news__content p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    max-height: 6rem;
+    margin-top: 8px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.orther-news {
+    margin-bottom: 10px;
+    display: block;
+    overflow: hidden;
+    max-height: 180px;
+
+}
+
+.orther-news__img {
+    width: 100%;
+}
+
+.orther-news h3 {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    color: var(--text-color);
+    text-align: -webkit-auto;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+

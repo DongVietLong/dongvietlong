@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var input = [12,46,32,64];
+        var sum = input.reduce((acc,current)=>{
+            return acc + current;
+        },0)
+        var mean = sum/(input.length);
+        console.log(mean);
+
+        var swap = input.sort();
+        console.log(swap);
+
+        var meadian = 0;
+        if(swap.length % 2 === 0)
+        {
+            meadian = swap[swap.length/2 - 1];
+        }
+        else{
+            meadian = (swap[Math.floor(swap.length/2)]);
+        }
+        console.log(meadian);
+    </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+var APPLICATION_VERSION = "1.0";
