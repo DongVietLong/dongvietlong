@@ -92,7 +92,7 @@
             <button class="number" id="2">2</button>
             <button class="number" id="3">3</button>
             <button class="system" id="+">+</button>
-            <button class="number" id="0"></button>
+            <button class="number" id=".">.</button>
             <button class="number" id="0">0</button>
             <button class="number" id="0"></button>
             <button class="system" id="=">=</button>
@@ -116,7 +116,9 @@
        }
 
        var getNumber=document.querySelectorAll('.number');
+       
        getNumber.forEach(a => {
+        console.log(a);
             a.addEventListener('click',function(){
                 var result=getResult();
                 result += this.id;
@@ -134,15 +136,16 @@
                 else if(this.id == "clearNumber")
                 {
                     
-                    let result = getResult();
-                    result.toString();
+                    let result = getResult().toString();
+                   
                     console.log(typeof(result));
                     if(result)
                     {
                         result = result.substr(0,result.length - 1);
                         outPutResult(result);
                     }
-                }else{
+                }
+                else{
                     let result = getResult();
                     let getOldresult = getOldNumber();
                     if(result != ""){
@@ -154,8 +157,8 @@
                             outPutOldValue("")
                         }else{
                             getOldresult += this.id;
-                            outPutOldValue(getOldresult)
-                            outPutResult("")
+                            outPutOldValue(getOldresult);
+                            outPutResult("");
                         }
                     }
                 }
