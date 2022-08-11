@@ -57,7 +57,7 @@
                     <div id="menu" class="center" onclick="openMenu()">
                         <em class="black fa-solid fa-bars" style="font-size:19px"></em>
                     </div>
-                    <div id="menu-mobile" class="pl-5 pr-3 m-0 pt-0" >
+                    <div id="menu-mobile" class="pl-5 pr-3 m-0 pt-0">
                         <div class="holder d-flex w-100 pt-3 pb-3 pl-2 mt-3">
                             <img src="./Photo/avatar.jpg" class="menu-photo">
                             <p class="d-flex center pl-3 m-0">Tú Mạnh Nguyễn</p>
@@ -128,8 +128,8 @@
                     </ul>
                 </div>
                 <div class="more d-flex center">
-                    <div class="center icon-avatar ">
-                        <img src="./Photo/avatar.jpg" alt="small avatar">
+                    <div class="center icon_avatar loading">
+                        <img class="icon_avatar" src="./Photo/avatar.jpg" alt="small avatar">
                         <div class="fb-name" style="font-size:13px">Tú</div>
                     </div>
                     <div class="icon-more d-flex center">
@@ -158,32 +158,32 @@
             </div>
         </div>
         <div class="fb-header">
-            <div class="photo-container d-flex center">
+            <div class="photo-container d-flex center loading">
                 <div class="cover">
-                    <img class="cover-photo" src="./Photo/cover.jpg" alt="edit-cover">
+                    <img id="cover" class="cover-photo" src="./Photo/cover.jpg" alt="edit-cover">
                     <div class="edit-cover d-flex center">
                         <div class="d-flex center"><em class="fas fa-camera"></em></div>
                         <p class="m-0 pl-2">Edit cover photo</p>
                     </div>
                 </div>
             </div>
-            <div class="profile d-flex center">
+            <div class="profile d-flex center loading">
                 <div class="avt-and-name center">
                     <div class="avatar w-20">
-                        <img src="./Photo/avatar.jpg" alt="avatar">
+                        <img id="avatar" src="./Photo/avatar.jpg" alt="avatar">
                         <div class="change-avatar d-flex">
                             <em class="fas fa-camera"></em>
                         </div>
                     </div>
                     <div class="fb-name pl-4">
-                        <h2>Tú Mạnh Nguyễn</h2>
-                        <p class="friend-number">1.4K Friends</p>
+                        <h2 id="username">Tú Mạnh Nguyễn</h2>
+                        <p class="friend-number"><span id="friend_number">1.4K</span> Friends</p>
                         <div class="friends">
-                            <img src="./Photo/friend1.jpeg" alt="friend1">
-                            <img src="./Photo/friend2.jpeg" alt="friend2">
-                            <img src="./Photo/friend3.jpeg" alt="friend3">
-                            <img src="./Photo/friend4.jpeg" alt="friend4">
-                            <img src="./Photo/friend5.jpeg" alt="friend5">
+                            <img class='friendAvt' src="./Photo/friend1.jpeg" alt="friend1">
+                            <img class='friendAvt' src="./Photo/friend2.jpeg" alt="friend2">
+                            <img class='friendAvt' src="./Photo/friend3.jpeg" alt="friend3">
+                            <img class='friendAvt' src="./Photo/friend4.jpeg" alt="friend4">
+                            <img class='friendAvt' src="./Photo/friend5.jpeg" alt="friend5">
                         </div>
                     </div>
                 </div>
@@ -198,7 +198,7 @@
                     </button>
                 </div>
             </div>
-            <div class="category-container d-flex center">
+            <div class="category-container d-flex center loading">
                 <div class="category d-flex">
                     <ul class="category-item d-flex m-0">
                         <div class="d-flex center">
@@ -240,7 +240,7 @@
                 </div>
             </div>
         </div>
-        <div class="fb-body d-flex center">
+        <div class="fb-body d-flex center loading">
             <div class="fb-content mt-3 d-flex flex-wrap">
                 <div class="left-content col-md-5 col-sm-12 col-12">
                     <div class="left-content-infor">
@@ -327,7 +327,7 @@
                     <div class="right-content-post">
                         <div class="post border-bottom">
                             <div class="status d-flex align-items-center pb-3">
-                                <img class="" src="./Photo/avatar.jpg" alt="avatar icon">
+                                <img class="icon_avatar" src="./Photo/avatar.jpg" alt="avatar icon">
                                 <input class="form-control bg-light search pr-5 ml-3 w-100" style="font-size:13px"
                                     type="search" placeholder="What's on your mind?" aria-label="Search">
                             </div>
@@ -376,13 +376,12 @@
                         <div class="time-share d-flex justify-content-between pt-3">
                             <div class="infor-post d-flex justify-content-flex-start">
                                 <div class="status">
-                                    <img src="./Photo/avatar.jpg" alt="avatar icon">
+                                    <img class="icon_avatar" src="./Photo/avatar.jpg" alt="avatar icon">
                                 </div>
                                 <div class="share-title pl-3">
                                     <p class="m-0"><strong>Tú Mạnh Nguyễn</strong> posted a photo</p>
-                                    <p>June 9 at 1:10 PM
-                                        <em class="fas fa-user-friends"></em>
-                                    </p>
+                                    <p class='time'>June 9 at 1:10 PM</p>
+                                    <!-- <em class="fas fa-user-friends"></em> -->
                                 </div>
                             </div>
                             <div class="edit-post">
@@ -391,7 +390,7 @@
                         </div>
                         <div class="status-share d-flex">
                             <p class="m-0 pb-3 pl-3">Sự chú ý của ta đã va phải ánh mắt của nàng...</p>
-                            <img src="./Photo/cat photo.jpg" alt="cat photo">
+                            <img class="photoPost" src="./Photo/cat photo.jpg" alt="cat photo">
                         </div>
                     </div>
                 </div>
