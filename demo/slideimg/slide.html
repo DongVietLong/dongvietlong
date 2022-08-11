@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>slideimg</title>
+</head>
+<body>
+    <div id="slide">
+        <img id="slides" src="img/img1.jpg" stt="0">
+        
+        
+        <a href="#" id="previmg" onclick="prev()" ><img src="img/prev.png"></a>
+        <a href="#" id="nextimg"><img onclick="next()" src="img/next.png"></a>
+    </div>
+    
+
+</body>
+</html>
+<script>
+   var arr_img=[
+    "img/img1.jpg",
+    "img/img2.jpg",
+    "img/img3.jpg",
+    "img/img4.jpg",
+    "img/img5.jpg",
+]
+
+var index=0;
+function next(){
+   index++;
+   if (index >= arr_img.length)index=0;
+   var slides =document.getElementById("slides");
+   slides.src = arr_img[index];
+   
+}
+function prev() {
+    index--;
+    if(index < 0) index = arr_img.length -1;
+    var slides =document.getElementById("slides");
+    slides.src = arr_img[index];
+}
+setInterval ("next()",2000);
+</script>
