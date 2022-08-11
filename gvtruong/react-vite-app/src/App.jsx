@@ -1,12 +1,12 @@
 import "./App.css";
-import AppLogo from "./components/AppLogo";
-import ButtonIncrement from "./components/ButtonIncrement";
+import AppHeader from "./components/AppHeader";
+import MainProfile from "./components/MainProfile";
 
 function App() {
   return (
-    <div className="App">
-      <AppLogo />
-      <ButtonIncrement />
+    <div>
+      <AppHeader />
+      <MainProfile />
     </div>
   );
 }
