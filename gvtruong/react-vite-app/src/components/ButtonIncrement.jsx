@@ -1,11 +1,8 @@
-import { useState } from "react";
-
-export default function ButtonIncrement() {
-  const [count, setCount] = useState(0);
+export default function ButtonIncrement({ increment, count }) {
   return (
     <div className="card">
-      <button onClick={() => setCount((count) => count + 1)}>
-        count is {count}
+      <button onClick={() => increment({ name: "truong", count: count + 1 })}>
+        increment
       </button>
     </div>
   );
