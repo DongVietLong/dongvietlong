@@ -1,12 +1,18 @@
 import "./App.css";
-import AppHeader from "./components/AppHeader";
-import MainProfile from "./components/MainProfile";
+import ButtonIncrement from "./components/ButtonIncrement";
+import { useState } from "react";
+import DisplayCount from "./components/DisplayCount";
 
 function App() {
+  const [user, setUser] = useState({
+    name: "long",
+    count: 10,
+  });
+
   return (
-    <div>
-      <AppHeader />
-      <MainProfile />
+    <div style={{ flexDirection: "column", display: "flex" }}>
+      <ButtonIncrement increment={setUser} count={user.count} />
+      <DisplayCount user={user} />
     </div>
   );
 }
