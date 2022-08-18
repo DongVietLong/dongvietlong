@@ -23,4 +23,7 @@ for(let i=0;i<list_img.length;i++)
     div.appendChild(p);
     getImg.appendChild(div);
 }
-
+var getIconMenu=document.querySelector('.icon_menu_display');
+getIconMenu.addEventListener('click',function(){
+    window.location="./menu.html";
+})
