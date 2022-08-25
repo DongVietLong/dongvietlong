@@ -1,7 +1,6 @@
 import React from "react";
 
-
-export class NewFeedItem extends React.Component {
+class NewFeedItem extends React.Component {
 
     constructor(props) {
         super(props);
@@ -31,3 +30,4 @@ export class NewFeedItem extends React.Component {
         )
     }
 }
+
