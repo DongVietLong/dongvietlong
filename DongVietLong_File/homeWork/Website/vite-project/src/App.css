@@ -1,0 +1,119 @@
+/* Header */
+.App{
+    width: 100%;
+}
+.discout_header{
+    width: 100%;
+    background-color: #f9f86c;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.discout_header:hover{
+    color: #000;
+    background-color: rgb(208, 205, 205);
+}
+.text_discout_header{
+    padding: 5px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+}
+.logo_navar{
+    height: 45px;
+}
+.img_logo{
+    height: 100%;
+    width: auto;
+}
+.item_navbar{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.Component_Menu{
+    margin: 0 15px;
+    color: inherit;
+    font-weight: 600;
+}
+.icon_navbar{
+    display: flex;
+}
+.icon{
+    font-size: 22px;
+    margin: 0 10px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.header:hover .navbar{
+    background-color: #f9f86c ;
+}
+.Carousel_img{
+    width: 100%;
+}
+.box_carousel{
+    display: flex;
+    position: relative;
+}
+.button_carousel-left{
+    border: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.2;
+}
+.button_carousel-left:hover{
+    opacity: 1;
+}
+.button_carousel-right{
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.2;
+}
+.button_carousel-right:hover{
+    opacity: 1;
+}
+.container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.block_carousel{
+    position: relative;
+}
+.button_seeMore{
+   text-decoration: none;
+   color: white;
+   border: solid 1px white;
+   padding: 5px 30px;
+   border-radius: 15px;
+   margin: 0 20px;
+   text-align: center;
+   font-weight: 600;
+   font-size: 13px;
+   width: 400px;
+}
+.button_seeMore:hover{
+    color: black;
+    background-color: white;
+}
+.block_button_seeMore{
+    position: relative;
+    top: -100px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    
+}
