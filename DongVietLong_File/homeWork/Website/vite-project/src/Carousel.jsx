@@ -6,7 +6,7 @@ const items = [
     "./src/img/desktop_Banner-combo-tiet-kiem.jpg",
     "./src/img/Excool-Banner-website.jpg"
 ]
-export default function Carousel() {
+export default function Carousels() {
     const [active, setActive] = useState(0);
     // const setTime = setInterval(function(){
     //     next();
