@@ -512,6 +512,69 @@
             "price": "299.000đ",
             "oldPrice": "399.000đ",
             "discount": "-21%"
+        },
+        {
+            "id":5,
+            "evaluate": 4.9,
+            "quanlity": 32,
+            "type":"trousers",
+            "packs": "Saving packs",
+            "img1": "./src/img/combo2.jpg",
+            "img2": "./src/img/combo1.jpg",
+            "describe": "Chỉ 299k",
+            "size": [
+                "M",
+                "L",
+                "XL",
+                "2XL",
+                "3XL"
+            ],
+            "title": "Combo 02 Quần short nam thể thao ProMax-S1 Logo thoáng khí",
+            "price": "299.000đ",
+            "oldPrice": "399.000đ",
+            "discount": "-21%"
+        },
+        {
+            "id":6,
+            "evaluate": 4.9,
+            "quanlity": 28,
+            "type":"trousers",
+            "packs": "Saving packs",
+            "img1": "./src/img/combo4.jpg",
+            "img2": "./src/img/combo1.jpg",
+            "describe": "Chỉ 299k",
+            "size": [
+                "M",
+                "L",
+                "XL",
+                "2XL",
+                "3XL"
+            ],
+            "title": "Combo 02 Quần short nam thể thao ProMax-S1 Logo thoáng khí",
+            "price": "299.000đ",
+            "oldPrice": "399.000đ",
+            "discount": "-21%"
+        },
+        {
+            "id":7,
+            "evaluate": 4.9,
+            "quanlity": 28,
+            "type":"trousers",
+            "packs": "Saving packs",
+            "img1": "./src/img/combo1.jpg",
+            "img2": "./src/img/combo1.jpg",
+            "describe": "Chỉ 299k",
+            "size": [
+                "M",
+                "L",
+                "XL",
+                "2XL",
+                "3XL"
+            ],
+            "title": "Combo 02 Quần short nam thể thao ProMax-S1 Logo thoáng khí",
+            "price": "299.000đ",
+            "oldPrice": "399.000đ",
+            "discount": "-21%"
         }
     ],
     "trousers":[
@@ -585,6 +648,48 @@
             "packs": "Hot",
             "type":"trousers",
             "img1": "./src/img/trouser7.jpg",
+            "img2": "./src/img/trouser8.jpg",
+            "describe": "Chỉ 299k",
+            "size": [
+                "M",
+                "L",
+                "XL",
+                "2XL",
+                "3XL"
+            ],
+            "title": "Combo 3 Quần lót Trunk Bamboo kháng khuẩn",
+            "price": "299.000đ",
+            "oldPrice": "",
+            "discount": ""
+        },
+        {
+            "id":5,
+            "evaluate": 4.9,
+            "quanlity": 146,
+            "packs": "Hot",
+            "type":"trousers",
+            "img1": "./src/img/trouser5.jpg",
+            "img2": "./src/img/trouser1.jpg",
+            "describe": "Chỉ 299k",
+            "size": [
+                "M",
+                "L",
+                "XL",
+                "2XL",
+                "3XL"
+            ],
+            "title": "Combo 3 Quần lót Trunk Bamboo kháng khuẩn",
+            "price": "299.000đ",
+            "oldPrice": "",
+            "discount": ""
+        },
+        {
+            "id":6,
+            "evaluate": 4.9,
+            "quanlity": 176,
+            "packs": "Hot",
+            "type":"trousers",
+            "img1": "./src/img/trouser3.jpg",
             "img2": "./src/img/trouser8.jpg",
             "describe": "Chỉ 299k",
             "size": [
@@ -688,6 +793,219 @@
             "oldPrice": "259.000đ",
             "discount": "-30%",
             "donate":""
+        },
+        {
+            "id":5,
+            "evaluate": 4.6,
+            "quanlity": 271,
+            "packs": "Sale",
+            "type":"trousers",
+            "img1": "./src/img/sport4.jpg",
+            "img2": "./src/img/sport2.jpg",
+            "describe": "",
+            "size": [
+                "M",
+                "L",
+                "XL",
+                "2XL",
+                "3XL"
+            ],
+            "title": "Quần Short Nam New French Terry",
+            "price": "181.000đ",
+            "oldPrice": "259.000đ",
+            "discount": "-30%",
+            "donate":""
+        },
+        {
+            "id":6,
+            "evaluate": 4.6,
+            "quanlity": 227,
+            "packs": "Sale",
+            "type":"trousers",
+            "img1": "./src/img/sport1.jpg",
+            "img2": "./src/img/sport3.jpg",
+            "describe": "",
+            "size": [
+                "M",
+                "L",
+                "XL",
+                "2XL",
+                "3XL"
+            ],
+            "title": "Quần Short Nam New French Terry",
+            "price": "181.000đ",
+            "oldPrice": "259.000đ",
+            "discount": "-30%",
+            "donate":""
+        }
+    ],
+    "product":[
+        {
+            "id":1,
+            "img": "./src/img/collection1.jpg",
+            "text": "Đồ Mặc Trong",
+            "type": "collection"
+        },
+        {
+            "id":2,
+            "img": "./src/img/collection2.jpg",
+            "text": "Mặc hàng ngày",
+            "type": "collection"
+        },
+        {
+            "id":3,
+            "img": "./src/img/collection3.jpg",
+            "text": "Đồ thể thao",
+            "type": "collection"
+        },
+        {
+            "id":4,
+            "img": "./src/img/collection4.jpg",
+            "text": "Tất Cả",
+            "type": "collection"
+        }
+    ],
+    "footer":[
+        {
+            "id":1,
+            "text":"Khám phá COOLMATE",
+            "type":"bold footer-hover"
+        },
+        {
+            "id":2,
+            "text":"Áo Polo",
+            "type":"light footer-hover"
+        },
+        {
+            "id":3,
+            "text":"Áo T-shirt",
+            "type":"light footer-hover"
+        }, {
+            "id":4,
+            "text":"Áo sơ mi",
+            "type":"light footer-hover"
+        }, {
+            "id":5,
+            "text":"Quần",
+            "type":"light footer-hover"
+        }, {
+            "id":6,
+            "text":"Quần lót",
+            "type":"light footer-hover"
+        }, {
+            "id":7,
+            "text":"Tất",
+            "type":"light footer-hover"
+        }, {
+            "id":8,
+            "text":"Mũ",
+            "type":"light footer-hover"
+        }, {
+            "id":9,
+            "text":"Phụ kiện khác",
+            "type":"light footer-hover"
+        }, {
+            "id":10,
+            "text":"Dịch Vụ khách hàng",
+            "type":"bold footer-hover"
+        }, {
+            "id":11,
+            "text":"Hỏi đáp",
+            "type":"light footer-hover"
+        }, {
+            "id":12,
+            "text":"Chính sách đổi trả 60 ngày",
+            "type":"light footer-hover"
+        }, {
+            "id":13,
+            "text":"Liên hệ",
+            "type":"light footer-hover"
+        }, {
+            "id":14,
+            "text":"Thành viên Coolclub",
+            "type":"light footer-hover"
+        }, {
+            "id":15,
+            "text":"Khách hàng hài lòng 100%",
+            "type":"light footer-hover"
+        }, {
+            "id":16,
+            "text":"Chính sách khuyến mãi",
+            "type":"light footer-hover"
+        }, {
+            "id":17,
+            "text":"Chính sách giao hàng",
+            "type":"light footer-hover"
+        }, {
+            "id":18,
+            "text":"Kiến thức mặc đẹp",
+            "type":"bold footer-hover"
+        }, {
+            "id":19,
+            "text":"Hướng dẫn chọn size",
+            "type":"light footer-hover"
+        }, {
+            "id":20,
+            "text":"Blog",
+            "type":"light footer-hover"
+        }, {
+            "id":21,
+            "text":"Group mặc đẹp sống chất",
+            "type":"light footer-hover"
+        }, {
+            "id":23,
+            "text":"Tài liệu - Tuyển dụng",
+            "type":"bold footer-hover"
+        }, {
+            "id":25,
+            "text":"Tuyển dụng",
+            "type":"light footer-hover"
+        }, {
+            "id":26,
+            "text":"Đăng ký bản quyền",
+            "type":"light footer-hover"
+        }, {
+            "id":27,
+            "text":"Về COOLMATE",
+            "type":"bold footer-hover"
+        }, {
+            "id":28,
+            "text":"Câu chuyện về Coolmate",
+            "type":"light footer-hover"
+        }, {
+            "id":29,
+            "text":"Nhà máy",
+            "type":"light footer-hover"
+        }, {
+            "id":30,
+            "text":"CoolClub",
+            "type":"light footer-hover"
+        }, {
+            "id":31,
+            "text":"Care & Share",
+            "type":"light footer-hover"
+        }, {
+            "id":32,
+            "text":"Địa chỉ liên hệ",
+            "type":"bold footer-hover "
+        }, {
+            "id":33,
+            "text":"HUB HÀ NỘI: Số 103, Đường Vạn Phúc, Quậ Hà Đông, TP. Hà Nội",
+            "type":"light footer-hover"
+        }, {
+            "id":34,
+            "text":"HUB Tp HCM: Lầu 1, Số 163, Trần Trọng Cung, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh",
+            "type":"light footer-hover"
+        },
+        {
+            "id":35,
+            "text":"COOLMATE lắng nghe bạn",
+            "type":"bold footer-hover "
+        },
+        {
+            "id":36,
+            "text":"Chúng tôi luôn trân tọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để có thể nâng cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa",
+            "type":"light footer-hover"
         }
     ]
 }
