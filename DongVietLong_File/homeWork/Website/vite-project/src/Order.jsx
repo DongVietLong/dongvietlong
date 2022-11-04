@@ -19,7 +19,7 @@ import Icon from "./Icon";
 export default function Order() {
     // src/components/Item.js
     const dispatch = useDispatch()
-    const [order, setOrder] = useState([])
+    const [order, setOrder] = useState ([])
     const [policy, setPolicy] = useState([])
     const [quanlity,setQuanlity]=useState( 1)
     useEffect(() => {
