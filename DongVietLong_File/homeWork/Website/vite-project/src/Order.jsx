@@ -21,7 +21,7 @@ export default function Order() {
     const dispatch = useDispatch()
     const [order, setOrder] = useState([])
     const [policy, setPolicy] = useState([])
-    const [quanlity,setQuanlity]=useState(1)
+    const [quanlity,setQuanlity]=useState( 1)
     useEffect(() => {
         fetch("http://localhost:3000/Combo")
             .then((res) => {
