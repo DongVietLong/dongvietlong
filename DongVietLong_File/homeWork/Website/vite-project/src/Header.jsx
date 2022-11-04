@@ -1,7 +1,11 @@
-import { useEffect, useState,useRef } from "react"
+import { useEffect, useState, useRef } from "react"
+import { Link } from "react-router-dom";
+import { useSelector } from 'react-redux';
+
 import Text from "./Text";
 import { useHover } from "./useHover";
 import Login from './Login/Login'
+
 export default function Header() {
     const [menu, setMenu] = useState([])
     const [navbar, setNavbar] = useState(false);
@@ -11,47 +15,44 @@ export default function Header() {
 
     const handleLogin = () => {
         setLogin(true);
-      }
+    }
     const handleSearch = () => {
         setNavbar(true)
     }
     const handleClose = () => {
         setLogin(false);
-      }
+    }
     const handleNavbar = () => {
         setNavbar(false)
     }
-    const OutSideRef=useRef(null);
-    useEffect(()=>{
-        if(navbar === true)
-        {
-        inputElement.current.focus();
+    const OutSideRef = useRef(null);
+    useEffect(() => {
+        if (navbar === true) {
+            inputElement.current.focus();
         }
-      },[navbar])
-    useEffect(()=>{
-        const handleClickOutside = (event)=>{
-            if(OutSideRef.current && !OutSideRef.current.contains(event.target))
-            {
-              setLogin(false);
+    }, [navbar])
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (OutSideRef.current && !OutSideRef.current.contains(event.target)) {
+                setLogin(false);
             }
         }
-        document.addEventListener("mousedown",handleClickOutside);
-        return () =>{
-            document.removeEventListener("mousedown",handleClickOutside);
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
         }
-    },[OutSideRef]);
-    useEffect(()=>{
-      const handleClickOutsides = (event)=>{
-          if(inputElement.current && !inputElement.current.contains(event.target))
-          {
-            setNavbar(false)
-          }
-      }
-      document.addEventListener("mousedown",handleClickOutsides);
-      return () =>{
-          document.removeEventListener("mousedown",handleClickOutsides);
-      }
-  },[inputElement]);
+    }, [OutSideRef]);
+    useEffect(() => {
+        const handleClickOutsides = (event) => {
+            if (inputElement.current && !inputElement.current.contains(event.target)) {
+                setNavbar(false)
+            }
+        }
+        document.addEventListener("mousedown", handleClickOutsides);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutsides);
+        }
+    }, [inputElement]);
 
     useEffect(() => {
         fetch('http://localhost:3000/menu')
@@ -60,6 +61,15 @@ export default function Header() {
                 setMenu(data);
             })
     }, [])
+
+    const cart = useSelector((state) => state.cart)
+    const getTotalQuantity = () => {
+        let total = 0
+        cart.forEach(item => {
+            total += item.quantity
+        })
+        return total
+    }
     return (
         <header className='header'>
             <div className="discout_header">
@@ -70,7 +80,7 @@ export default function Header() {
                     <div className="navbar_menu-item">
                         <div className='logo_navar'>
                             <a href="/">
-                                <img src="./src/img/Untitled.png" alt="lỗi hiển thị" className='img_logo' />
+                                <img src="../src/img/Untitled.png" alt="lỗi hiển thị" className='img_logo' />
                             </a>
                         </div>
                         <div className="menu_navbar">
@@ -149,7 +159,12 @@ export default function Header() {
                         <div className="icon_navbar">
                             <i className="fa-solid fa-magnifying-glass icon" onClick={handleSearch} />
                             <i className="fa-solid fa-user icon" onClick={handleLogin} />
-                            <i className="fa-solid fa-weight-hanging icon" />
+                            <Link to="/Cart" className="Link">
+                                <i className="fa-solid fa-weight-hanging icon Cart_icon" >
+                                    <p className="Icon_quantity">{getTotalQuantity() || 0}</p>
+                                </i>
+                                
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -163,8 +178,8 @@ export default function Header() {
                 </div>
             }
             {
-        login && <Login OutSideRef={OutSideRef}  click={handleClose}/>
-      }
+                login && <Login OutSideRef={OutSideRef} click={handleClose} />
+            }
         </header>
     )
 }

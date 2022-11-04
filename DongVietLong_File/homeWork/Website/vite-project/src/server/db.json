@@ -435,8 +435,8 @@
             "quanlity": 29,
             "type":"trousers", 
            "packs": "Saving packs",
-            "img1": "./src/img/combo1.jpg",
-            "img2": "./src/img/combo2.jpg",
+            "img1": "../src/img/combo1.jpg",
+            "img2": "../src/img/combo2.jpg",
             "describe": "Chỉ 299k",
             "size": [
                 "M",
@@ -446,7 +446,7 @@
                 "3XL"
             ],
             "title": "Combo 02 Quần short nam thể thao Movement 5 co giãn",
-            "price": "299.000đ",
+            "price": "299000",
             "oldPrice": "399.000đ",
             "discount": "-25%"
         },
@@ -456,8 +456,8 @@
             "quanlity": 63,
             "type":"trousers",
             "packs": "Saving packs",
-            "img1": "./src/img/combo3.jpg",
-            "img2": "./src/img/combo4.jpg",
+            "img1": "../src/img/combo3.jpg",
+            "img2": "../src/img/combo4.jpg",
             "describe": "Chỉ 399k",
             "size": [
                 "M",
@@ -467,7 +467,7 @@
                 "3XL"
             ],
             "title": "Combo 03 Áo thun thể thao nam ProMax-S1",
-            "price": "399.000đ",
+            "price": "399000",
             "oldPrice": "537.000đ",
             "discount": "-26%"
         },
@@ -477,8 +477,8 @@
             "quanlity": 325,
             "type":"trousers",
             "packs": "Saving packs",
-            "img1": "./src/img/combo5.jpg",
-            "img2": "./src/img/combo6.jpg",
+            "img1": "../src/img/combo5.jpg",
+            "img2": "../src/img/combo6.jpg",
             "describe": "Chỉ 499k",
             "size": [
                 "M",
@@ -488,7 +488,7 @@
                 "3XL"
             ],
             "title": "Combo 03 Áo Polo thể thao nam ProMax-S1 Logo thoáng khí",
-            "price": "499.000đ",
+            "price": "499000",
             "oldPrice": "717.000đ",
             "discount": "-30%"
         },
@@ -498,8 +498,8 @@
             "quanlity": 328,
             "type":"trousers",
             "packs": "Saving packs",
-            "img1": "./src/img/combo7.jpg",
-            "img2": "./src/img/combo8.jpg",
+            "img1": "../src/img/combo7.jpg",
+            "img2": "../src/img/combo8.jpg",
             "describe": "Chỉ 299k",
             "size": [
                 "M",
@@ -509,7 +509,7 @@
                 "3XL"
             ],
             "title": "Combo 02 Quần short nam thể thao ProMax-S1 Logo thoáng khí",
-            "price": "299.000đ",
+            "price": "299000",
             "oldPrice": "399.000đ",
             "discount": "-21%"
         },
@@ -519,8 +519,8 @@
             "quanlity": 32,
             "type":"trousers",
             "packs": "Saving packs",
-            "img1": "./src/img/combo2.jpg",
-            "img2": "./src/img/combo1.jpg",
+            "img1": "../src/img/combo2.jpg",
+            "img2": "../src/img/combo1.jpg",
             "describe": "Chỉ 299k",
             "size": [
                 "M",
@@ -530,7 +530,7 @@
                 "3XL"
             ],
             "title": "Combo 02 Quần short nam thể thao ProMax-S1 Logo thoáng khí",
-            "price": "299.000đ",
+            "price": "299000",
             "oldPrice": "399.000đ",
             "discount": "-21%"
         },
@@ -540,8 +540,8 @@
             "quanlity": 28,
             "type":"trousers",
             "packs": "Saving packs",
-            "img1": "./src/img/combo4.jpg",
-            "img2": "./src/img/combo1.jpg",
+            "img1": "../src/img/combo4.jpg",
+            "img2": "../src/img/combo1.jpg",
             "describe": "Chỉ 299k",
             "size": [
                 "M",
@@ -551,7 +551,7 @@
                 "3XL"
             ],
             "title": "Combo 02 Quần short nam thể thao ProMax-S1 Logo thoáng khí",
-            "price": "299.000đ",
+            "price": "299000",
             "oldPrice": "399.000đ",
             "discount": "-21%"
         },
@@ -561,8 +561,8 @@
             "quanlity": 28,
             "type":"trousers",
             "packs": "Saving packs",
-            "img1": "./src/img/combo1.jpg",
-            "img2": "./src/img/combo1.jpg",
+            "img1": "../src/img/combo1.jpg",
+            "img2": "../src/img/combo1.jpg",
             "describe": "Chỉ 299k",
             "size": [
                 "M",
@@ -572,7 +572,7 @@
                 "3XL"
             ],
             "title": "Combo 02 Quần short nam thể thao ProMax-S1 Logo thoáng khí",
-            "price": "299.000đ",
+            "price": "299000",
             "oldPrice": "399.000đ",
             "discount": "-21%"
         }
@@ -1006,6 +1006,38 @@
             "id":36,
             "text":"Chúng tôi luôn trân tọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để có thể nâng cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa",
             "type":"light footer-hover"
+        }
+    ],
+    "Order":[
+        {
+            "id":1,
+            "img":"https://www.coolmate.me/images/icons/icon6.svg",
+            "describle":"Đổi trả cực dễ chỉ cần số điện thoại"
+        },
+        {
+            "id":2,
+            "img":"https://www.coolmate.me/images/icons/icon4.svg",
+            "describle":" Miễn phí vận chuyển  cho đơn hàng trên 200k"
+        },
+        {
+            "id":2,
+            "img":"https://www.coolmate.me/images/icons/icon5.svg",
+            "describle":"Hotline 1900.27.27.37 hỗ trợ từ 8h30 - 22h mỗi ngày"
+        },
+        {
+            "id":3,
+            "img":"https://www.coolmate.me/images/icons/icon2.svg",
+            "describle":"Đến tận nơi nhận hàng trả hoàn tiền trong 24h"
+        },
+        {
+            "id":4,
+            "img":"https://www.coolmate.me/images/icons/icon1.svg",
+            "describle":"60 ngày đổi trả vì bất kỳ lí do gì"
+        },
+        {
+            "id":5,
+            "img":"https://www.coolmate.me/images/icons/icon6.svg",
+            "describle":"Giao hàng nhanh toàn quốc"
         }
     ]
 }

@@ -1,4 +1,6 @@
 import './ProductDetail.css'
+
+
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { Link } from "react-router-dom";
@@ -7,17 +9,18 @@ import './App.css'
 import Header from './Header'
 import Footer from './Footer'
 export default function ProductDetails() {
-    const [data,setData]=useState([])
-    useEffect(()=>{
+    const [data, setData] = useState([])
+    useEffect(() => {
         fetch(`http://localhost:3000/Combo`)
             .then(response => response.json())
             .then(posts => {
                 setData(posts)
             })
     })
+
     return (
         <div className="ProductDetails">
-            <Header/>
+            <Header />
             <div className="title_prodcutDetail">
                 <h3 className="Content_title">Sản Phẩm</h3>
                 <select className="select_option">
@@ -34,12 +37,12 @@ export default function ProductDetails() {
                     <div className="Blockimg_firstProduct">
                         <img src="./src/img/ProductDetail.jpg" alt="" className="img_firstProduct" />
                     </div>
-                    
+
                     {
                         data.map((value) => {
-                            return ( 
-                                <div key={value.id} className='item_product'>
-                                    <Link to="/Order" className="Link">
+                            return (
+                                // <div key={value.id} className='item_product'>
+                                <Link to={"/Order/" + value.id} className="Link" key={value.id}>
                                     <div className="block_product">
                                         <img src={value.img1} alt="lỗi hiển thị" className='img_product img1' />
                                         {/* <img src={value.img2} alt="lỗi hiển thị" className='img_product img2' /> */}
@@ -79,14 +82,14 @@ export default function ProductDetails() {
                                         <p className="discount_price">{value.discount}</p>
                                     </div>
                                 </Link>
-                                </div>
+                                // </div>
                             )
                         })
                     }
-                    
+
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     )
 }

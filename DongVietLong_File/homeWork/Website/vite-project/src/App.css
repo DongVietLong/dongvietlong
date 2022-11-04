@@ -635,4 +635,19 @@
 }
 .Link{
     text-decoration: none;
+    color: #000;
+}
+.quanlity_Order{
+    display: flex;
+}
+.quanlity_Product{
+    margin: 0;
+}
+.button_quanlity{
+    display: flex;
+    align-items: center;
+}
+.btn_prev{
+    border: none;
+    margin:0 7px;
 }

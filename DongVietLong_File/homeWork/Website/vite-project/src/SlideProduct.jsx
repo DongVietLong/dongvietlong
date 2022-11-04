@@ -86,7 +86,7 @@ export default function SliderProduct() {
                     post.map((value) => {
                         return (
                             <div key={value.id} className='item_product'>
-                                <Link to="/Order" className="Link">
+                                <Link to={"/Order/" + value.id} className="Link">
                                     <div className="block_product">
                                         <img src={value.img1} alt="lỗi hiển thị" className='img_product img1' />
                                         {/* <img src={value.img2} alt="lỗi hiển thị" className='img_product img2' /> */}
