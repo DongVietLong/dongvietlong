@@ -196,3 +196,107 @@
     font-size: 13px;
     color: red;
 }
+
+/* Cart */
+.text-Order_Product{
+    font-size: 25px;
+    font-weight: 600;
+}
+.Insert_information{
+    width: 100%;
+}
+.nameOrphone{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.input_Name{
+    width: 48%;
+    height: 40px;
+    outline: none;
+    border-radius: 20px;
+    padding: 0 10px;
+    border: 1px solid rgb(187, 183, 183);
+}
+.Email{
+    margin: 15px 0;
+}
+.address{
+    margin: 15px 0;
+}
+.input_Email{
+    width: 100%;
+    outline: none;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 10px;
+    border: 1px solid rgb(187, 183, 183);
+}
+.input_address{
+    width: 100%;
+    outline: none;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 10px;
+    border: 1px solid rgb(187, 183, 183);
+}
+.addressDetail{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.select_option{
+    width: 30%;
+    margin: 0;
+    border: 1px solid rgb(187, 183, 183);
+}
+.note{
+    margin: 15px 0;
+}
+.input_note{
+    width: 100%;
+    outline: none;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 10px;
+    border: 1px solid rgb(187, 183, 183);
+}
+.Cart_item{
+    margin: 0 20px;
+}
+.text-nameProduct_cart{
+    font-weight: 700;
+}
+.text-priceProduct_cart{
+    margin: 10px 0;
+    font-weight: 400;
+}
+.color_Product{
+    margin: 10px 0;
+}
+.BlockCart_Detail{
+    margin: 30px 0;
+}
+.img-vnpay{
+    width: 50px;
+}
+.payment_item
+{
+    display: flex;
+    align-items: center;
+    border: 1px solid #D9D9D9;
+    border-radius: 16px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: .2s all;
+    opacity: .6;
+    margin: 10px 0;
+}
+.activeDisCount{
+    border: 1px solid #2f5acf;
+    opacity: 1;
+}
+.feedback{
+    margin-top: 20px;
+}

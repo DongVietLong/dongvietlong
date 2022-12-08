@@ -1039,5 +1039,37 @@
             "img":"https://www.coolmate.me/images/icons/icon6.svg",
             "describle":"Giao hàng nhanh toàn quốc"
         }
+    ],
+    "Pay":[
+       {
+        "id":1,
+        "imgPay":"../src/img/vnpay.webp",
+        "name":"Thẻ ATM / Internet Banking<br/>Thẻ tín dụng (Credit card) / Thẻ ghi nợ (Debit card)<br/>VNPay QR"
+       },
+       {
+        "id":2,
+        "imgPay":"../src/img/COD.svg",
+        "name":"COD <br/>Thanh toán khi nhận hàng"
+       },
+       {
+        "id":3,
+        "imgPay":"../src/img/momo-icon.webp",
+        "name":"Thanh Toán MoMo"
+       },
+       {
+        "id":4,
+        "imgPay":"../src/img/logo-zalopay.svg",
+        "name":"Ví điện tử ZaloPay"
+       },
+       {
+        "id":5,
+        "imgPay":"../src/img/195dbf69c0ac36f26fbd_(1).webp",
+        "name":"Ví ShopeePay <br/>Giảm thêm 50k cho khách hàng lần đầu mở ví và thanh toán bằng ShopeePay"
+       },
+       {
+        "id":6,
+        "imgPay":"../src/img/9pay.svg",
+        "name":"Ví điện tử 9Pay"
+       }
     ]
 }
